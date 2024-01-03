@@ -24,10 +24,26 @@ export { default as Skeleton } from "./Common/Skeleton/Skeleton";
 export { default as Extras } from "./Extras/Extras";
 export { default as Extras2 } from "./Extras/Extras2";
 export { default as Extras3 } from "./Extras/Extras3";
-
+//game//
 //bullflip //
-export { default as ChoiceSelection } from "./BullFlip/ChoiceSelection";
-export { default as AmountSelection } from "./BullFlip/AmountSelection";
+export { default as ChoiceSelection } from "./Game/BullFlip/ChoiceSelection";
+export { default as AmountSelection } from "./Game/BullFlip/AmountSelection";
+//treasure//
+export { default as ApproxRewards } from "./Game/TreasureHunt/Treasurecomponents/ApproxRewards";
+export { default as GameplayAnimation } from "./Game/TreasureHunt/Treasurecomponents/GamePlayAnimation";
+export { default as CurrentClones } from "./Game/TreasureHunt/Treasurecomponents/CurrentClones";
+export { default as LoadingSection } from "./Game/TreasureHunt/Treasurecomponents/LoadingSection";
+export { default as Rewards } from "./Game/TreasureHunt/Treasurecomponents/Rewards";
+export { default as OwnedCones } from "./Game/TreasureHunt/Treasurecomponents/OwnedCones";
+export { default as ShopItem } from "./Game/TreasureHunt/Treasurecomponents/ShopItem";
+export { default as Shop } from "./Game/TreasureHunt/Treasurecomponents/Shop";
+export { default as TreasureHunt } from "./Game/TreasureHunt/TreasureHunt";
+
+
+
+
+
+
 
 //statuses//
 export { default as EventCard } from "./Statuses/eventCard";
@@ -69,12 +85,15 @@ export { default as TransferBear } from "./Wallet/TransferBEAR";
 export { default as Stke } from "./Wallet/Stke";
 export { default as Exchange } from "./Wallet/Exchange";
 export { default as Coin } from "./Wallet/Coin";
+
  //profile//
  export { default as Advice } from "./profileCmd/Advice";
  export { default as TreasurePass } from "./profileCmd/TreasurePass";
  export { default as UserStatus } from "./profileCmd/UserStatus";
  export { default as MyCampaigns } from "./profileCmd/MyCampaigns";
  export { default as OwnedNFT } from "./profileCmd/OwnedNFT";
+ export { default as NFTCard } from "./profileCmd/NFTCard";
+ export { default as ClubNFTStake } from "./profileCmd/ClubNFTStake";
 
 
  //market//

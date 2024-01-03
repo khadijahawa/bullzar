@@ -1,5 +1,5 @@
 import React from 'react'
-import { Advice, UserStatus, TreasurePass, Extras2, MyCampaigns, OwnedNFT, } from '../components'
+import { Advice, ClubNFTStake, UserStatus, TreasurePass, Extras2, MyCampaigns, OwnedNFT, } from '../components'
 
 const Profile = () => {
   return (
@@ -9,14 +9,9 @@ const Profile = () => {
     <TreasurePass />
      <Advice />
      <UserStatus />
-
-
-
-
-
+     <ClubNFTStake />
     <MyCampaigns />
     <OwnedNFT />
-
     </div>
   )
 }

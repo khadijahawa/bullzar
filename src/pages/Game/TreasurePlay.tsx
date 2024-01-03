@@ -1,9 +1,11 @@
 import React from 'react'
+import {TreasureHunt} from '../../components'
+
 
 const TreasurePlay = () => {
   return (
     <div>
-      treasure play
+     <TreasureHunt />
     </div>
   )
 }

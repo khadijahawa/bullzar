@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import {ChoiceSelection, AmountSelection, Extras2, } from '../components'
-import { BearToken, logo3, rps } from '../assets'
+import {ChoiceSelection, AmountSelection, Extras2, } from '../../components'
+import { BearToken, logo3, rps } from '../../assets'
 import { Link } from 'react-router-dom'
 import {
   useAddress,
@@ -9,7 +9,7 @@ import {
   useTokenBalance,
 } from "@thirdweb-dev/react";
 import { Trans } from "@lingui/macro";
-import {BULLFlip, tokenContractAddress} from "../constants/contractAddresses"
+import {BULLFlip, tokenContractAddress} from "../../constants/contractAddresses"
 
 
 // connectBackend functions from github

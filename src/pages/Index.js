@@ -6,9 +6,9 @@ export { default as Home } from "./Home";
 export { default as NFT } from "./NFT";
 export { default as Profile } from "./Profile";
 export { default as AllStatus } from "./AllStatus";
-export { default as TreasurePlay } from "./TreasurePlay";
+export { default as TreasurePlay } from "./Game/TreasurePlay";
 
-export { default as BullFlip } from "./BullFlip";
+export { default as BullFlip } from "./Game/BullFlip";
 export { default as CreateNft } from "./CreateNft";
 //market//
 export { default as Friends } from "./Market/Friends/Friends";

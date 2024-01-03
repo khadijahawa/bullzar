@@ -1,5 +1,5 @@
 import React from 'react';
-import { BearToken, logo3} from '../../assets'
+import { BearToken, logo3} from '../../../assets'
 
 
 //i need to fix this //

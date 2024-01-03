@@ -1,5 +1,5 @@
 import React from 'react'
-import { lol, m, x, z, n,y,k,l, q} from '../../assets'
+import { lol, m, x, z, n,y,k,l, q} from '../../../assets'
 
 
 
