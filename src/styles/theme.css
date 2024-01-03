@@ -1,0 +1,14 @@
+/* styles/theme.css */
+
+/* Light Mode */
+.light {
+    --bg-color: bg-gray-100;
+    --text-color: text-black;
+  }
+  
+  /* Dark Mode */
+  .dark {
+    --bg-color: bg-gray-800;
+    --text-color: text-white;
+  }
+  

@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-12-13 15:36-0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/NFTs/NFTbase.jsx:52
+msgid "\"Brave members, handpicked for a groundbreaking cloning ritual to power our club's future expeditions. Mint one of the chosen few, and you'll enjoy a thrilling return of 314,000 $BEARS & 31415 $BULL! Mint a Royalty, your destiny awaits with a majestic bounty 1,300,000$BEARS & 131,000 $BULL. Join the adventure now!\""
+msgstr "\"Des membres courageux, triés sur le volet pour un rituel de clonage révolutionnaire destiné à alimenter les futures expéditions de notre club. Misez sur l'un des élus, et vous bénéficierez d'un retour palpitant de 314 000 $BEARS & 31415 $BULL ! Misez sur une Royauté, votre destin vous attend avec une majestueuse prime de 1 300 000 $BEARS et 131 000 $BULL. Rejoignez l'aventure dès maintenant !\""
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:59
+msgid "\"Get a pass, obtain a Clone-Worker, and set them to work! Want BEARS to recruit a WORKER? Acquire them through staking BULL tokens or just Swap BEARS for BULL from wallet.\""
+msgstr "\"Obtenez un laissez-passer, obtenez un Clone-Travailleur et mettez-le au travail ! Vous voulez des OURS pour recruter un TRAVAILLEUR ? Obtenez-les en misant des jetons BULL ou échangez simplement des BEARS contre des BULL dans votre portefeuille.\""
+
+#: src/components/NFTs/Card/BaseGalery.jsx:88
+msgid "\"Only one member possesses the Eye of Ra, and their Identity remains a Mystery.\""
+msgstr "\"Un seul membre possède l'œil de Râ, et son identité reste un mystère"
+
+#: src/pages/Campaigns/AllCampaigns.jsx:17
+msgid "\"Whether it's an adventurous journey, an educational dream, a celebration, or a game-changing idea, turn your dreams into reality with fundraising.\""
+msgstr "\"Qu'il s'agisse d'un voyage aventureux, d'un rêve éducatif, d'une célébration ou d'une idée qui change la donne, transformez vos rêves en réalité grâce à la collecte de fonds"
+
+#: src/components/Home/CampaignsHP.jsx:70
+msgid "Active Fundraisers"
+msgstr "Collecteurs de fonds actifs"
+
+#: src/components/Wallet/BullWallet.jsx:125
+msgid "AIRDROP"
+msgstr "AIRDROP"
+
+#: src/pages/NFTs/OwnedFriends.jsx:12
+msgid "ALL Friends"
+msgstr "TOUS les amis"
+
+#: src/components/Campaigns/AllCampaigns/Campaigns.jsx:67
+msgid "ALL Fundraisers"
+msgstr "Toutes les collectes de fonds"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:102
+msgid "animals"
+msgstr "animaux"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:297
+msgid "Anonymous!"
+msgstr "Anonyme !"
+
+#: src/components/profile/profile/MyNFTs.jsx:129
+msgid "Balance"
+msgstr "Équilibre"
+
+#: src/components/Wallet/Bearwallet/BearWallet.jsx:91
+msgid "BALANCE"
+msgstr "ÉQUILIBRE"
+
+#: src/pages/FlipCoin.jsx:119
+msgid "Balance :"
+msgstr "Équilibre"
+
+#: src/components/Wallet/tokendrop.jsx:64
+msgid "Balance:"
+msgstr "ÉQUILIBRE"
+
+#: src/components/Home/BaseBanner.jsx:31
+msgid "BASE NFT PASS & MEMBERS"
+msgstr "CARTE DE BASE NFT & MEMBRES"
+
+#: src/components/Home/Hero.jsx:19
+msgid "BASE-MAINNET DAPP"
+msgstr "BASE-MAINNET DAPP"
+
+#: src/components/profile/profile/AllBaseNFT.jsx:97
+msgid "BASE-MAINNET Owned NFTs"
+msgstr "BASE-MAINNET Owned NFTs"
+
+#: src/components/NFTs/Market/721/buy.jsx:61
+#: src/components/NFTs/Market/721/sell.jsx:71
+msgid "BIRTH ZODIAC :"
+msgstr "ZODIAC DE NAISSANCE :"
+
+#: src/components/NFTs/Card/web3banner.jsx:22
+msgid "BRIDGE --"
+msgstr "PONT --"
+
+#: src/pages/Bridge.jsx:22
+msgid "Bridge BULL Polygon & BSC TOKENs FOR BULL-BASE"
+msgstr "Pont BULL Polygone & BSC TOKENs POUR BULL-BASE"
+
+#: src/pages/Campaigns/AllCampaigns.jsx:27
+msgid "BRIDGE TO"
+msgstr "PONT VERS"
+
+#: src/pages/FlipCoin.jsx:98
+msgid "BULL OR BEAR"
+msgstr "TAUREAU OU OURS"
+
+#: src/components/profile/profile/PASSNFT.jsx:101
+msgid "BULL-BASE Balance"
+msgstr "Balance BULL-BASE"
+
+#: src/components/Wallet/BullWallet.jsx:107
+msgid "BULLS-BASE BALANCE"
+msgstr "Balance BULL-BASE"
+
+#: src/pages/Bridge.jsx:31
+msgid "BURN Club Polygon & BSC NFTs FOR BULL-BASE MYSTERY BOX"
+msgstr "BURN Club Polygon et BSC NFT POUR BULL-BASE MYSTERY BOX"
+
+#: src/components/profile/TreasureHunt/Components/ShopItem.tsx:49
+msgid "Buy"
+msgstr "Acheter"
+
+#: src/components/Wallet/HeroN.jsx:16
+msgid "Campaigns"
+msgstr "Campagnes"
+
+#: src/pages/NFTDetail/[id].jsx:151
+msgid "Chain:"
+msgstr "Chaîne :"
+
+#: src/pages/Meeting.jsx:30
+msgid "Check out Club conference @Spot"
+msgstr "Découvrez la conférence du Club @Spot"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:178
+#: src/components/Wallet/tokendrop.jsx:72
+msgid "Claim"
+msgstr "Réclamation"
+
+#: src/components/profile/profile/MyNFTs.jsx:142
+#: src/components/profile/profile/PASSNFT.jsx:110
+msgid "Claim Rewards"
+msgstr "Réclamer des récompenses"
+
+#: src/components/profile/profile/MyNFTs.jsx:116
+#: src/components/profile/profile/PASSNFT.jsx:90
+msgid "Claimable Rewards"
+msgstr "Récompenses à réclamer"
+
+#: src/pages/addressbook.jsx:46
+msgid "CLONED MEMBERS"
+msgstr "MEMBRES CLONÉS"
+
+#: src/components/App/footer.jsx:8
+msgid "Copyright:"
+msgstr "Droit d'auteur :"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:85
+msgid "Create a Fundraiser"
+msgstr "Créer une collecte de fonds"
+
+#: src/components/Home/Hero.jsx:23
+msgid "Create A Fundraiser"
+msgstr "Créer une collecte de fonds"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:98
+msgid "Create BULL Friend NFT"
+msgstr "Créer BULL Friend NFT"
+
+#: src/components/profile/profile/MyCampaigns.jsx:72
+msgid "Create Campaign"
+msgstr "Créer une campagne"
+
+#: src/pages/NFTs/Market.jsx:34
+#: src/pages/NFTs/NFTbase.jsx:61
+msgid "Create NFT"
+msgstr "Créer un NFT"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:243
+msgid "Creator"
+msgstr "Créateur"
+
+#: src/components/Campaigns/FundCard.jsx:78
+msgid "Days Left"
+msgstr "Jours restants"
+
+#: src/pages/NFTDetail/[id].jsx:142
+msgid "Description:"
+msgstr "Description :"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:336
+msgid "Donate"
+msgstr "Faire un don"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:311
+msgid "Donate to campaign"
+msgstr "Faire un don à la campagne"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:277
+msgid "Donators"
+msgstr "Donateurs"
+
+#: src/components/profile/TreasureHunt/Components/ApproxRewards.tsx:62
+msgid "Earned this session:"
+msgstr "Obtenu lors de cette session :"
+
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:62
+msgid "Error"
+msgstr "Erreur"
+
+#: src/pages/Meeting.jsx:33
+msgid "Events to be announced"
+msgstr "Événements à venir"
+
+#: src/pages/addressbook.jsx:47
+msgid "EYE OF RA HOLDER"
+msgstr "ŒIL DU DÉTENTEUR DE RA"
+
+#: src/components/NFTs/Market/721/buy.jsx:59
+#: src/components/NFTs/Market/721/sell.jsx:69
+msgid "FAMILY :"
+msgstr "FAMILLE :"
+
+#: src/components/NFTs/Market/721/buy.jsx:65
+#: src/components/NFTs/Market/721/sell.jsx:75
+msgid "Favorite Location :"
+msgstr "Lieu de prédilection :"
+
+#: src/pages/FlipCoin.jsx:69
+msgid "Flip again!"
+msgstr "Retournez encore une fois !"
+
+#: src/pages/FlipCoin.jsx:109
+msgid "Flip!"
+msgstr "Flip !"
+
+#: src/pages/NFTs/NFTbase.jsx:54
+msgid "Found the EYE of Ra?! Recieve 314000 BULL & 5 MIL BEARS, only 133 unique members \"Legacy Phase\""
+msgstr "Trouvez l'ŒIL de Râ ! Recevez 314000 BULL & 5 MIL BEARS, seulement 133 membres uniques \"Legacy Phase\""
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:91
+msgid "Friends"
+msgstr "Amis"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:306
+msgid "Fund"
+msgstr "Fonds"
+
+#: src/pages/FlipCoin.jsx:117
+msgid "Game Contract"
+msgstr "Contrat de jeu"
+
+#: src/pages/NFTs/NFTbase.jsx:58
+msgid "Get Member with Debit/Credit Card"
+msgstr "Devenir membre avec une carte de débit/crédit"
+
+#: src/components/Home/Hero.jsx:29
+msgid "Happy Event, Travel, Education, Party, Game or Any Idea you may have"
+msgstr "Happy Event, Travel, Education, Party, Game ou toute autre idée que vous pourriez avoir"
+
+#: src/components/Wallet/HeroN.jsx:12
+msgid "Happy Event, Travel, Education, Party, Game or Any other thing in your mind"
+msgstr "Heureux événement, voyage, éducation, fête, jeu ou toute autre chose qui vous vient à l'esprit"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:102
+msgid "Hint: Our Friends are cool"
+msgstr "Indice : Nos amis sont cool"
+
+#: src/components/profile/TreasureHunt/Components/GamePlayAnimation.jsx:39
+msgid "I Need a Worker!"
+msgstr "J'ai besoin d'un travailleur !"
+
+#: src/components/Wallet/HeroN.jsx:19
+msgid "in your wallet"
+msgstr "dans votre portefeuille"
+
+#: src/components/Home/Hero.jsx:50
+msgid "in your wallet to interact with our DAPP"
+msgstr "dans votre portefeuille pour interagir avec notre DAPP"
+
+#: src/pages/NFTs/NFTbase.jsx:41
+msgid "LEGACY MEMBER FEE"
+msgstr "COTISATION DES ANCIENS MEMBRES"
+
+#: src/components/profile/profile/MyNFTs.jsx:110
+msgid "Legacy Member NFT Staked generate an annual yield of 835,000 BEARS tokens"
+msgstr "Le Legacy Member NFT Staked génère un rendement annuel de 835 000 jetons BEARS"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:55
+msgid "Legend tells of Lost BULL token treasures scattered worldwide. Mando the 2nd confirms his grandfather, Mando the 1st, acknowledged their existence. It is a quest to find these tokens. Join the hunt as a CLONE-WORKER and seize your Share!"
+msgstr "La légende parle de trésors de jetons BULL perdus dispersés dans le monde entier. Mando le 2e confirme que son grand-père, Mando le 1er, a reconnu leur existence. La recherche de ces jetons est une véritable quête. Rejoignez la chasse en tant que CLONE-WORKER et saisissez votre part !"
+
+#: src/components/Wallet/tokendrop.jsx:61
+msgid "Loading Balance..."
+msgstr "Chargement de l'équilibre..."
+
+#: src/components/NFTs/Memberminter.jsx:239
+#: src/components/NFTs/Passminter.jsx:207
+#: src/components/NFTs/Passminter.jsx:237
+#: src/components/profile/profile/AllBaseNFT.jsx:115
+#: src/components/profile/profile/BaseOwnedCreate.jsx:127
+#: src/components/profile/TreasureHunt/Components/LoadingSection.jsx:5
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:57
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: src/components/NFTs/Market/721/buy.jsx:63
+#: src/components/NFTs/Market/721/sell.jsx:73
+msgid "Lucky Token :"
+msgstr "Jeton de chance :"
+
+#: src/components/profile/profile/PASSNFT.jsx:114
+msgid "Member NFT Staked generate an annual yield of 438,000 BULL tokens"
+msgstr "Les membres NFT mis en jeu génèrent un rendement annuel de 438 000 BULL tokens"
+
+#: src/components/NFTs/Market/721/buy.jsx:68
+#: src/components/NFTs/Market/721/sell.jsx:78
+msgid "MEMBER NUM :"
+msgstr "MEMBRE NUM :"
+
+#: src/pages/NFTs/Friends.jsx:39
+msgid "Members"
+msgstr "Membres"
+
+#: src/pages/NFTs/MarketSell.jsx:15
+#: src/pages/NFTs/NFTbase.jsx:33
+msgid "MEMBERS"
+msgstr "MEMBRES"
+
+#: src/pages/FlipCoin.jsx:97
+msgid "Members Early Access @Q4/2024"
+msgstr "Accès anticipé des membres @Q4/2024"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:52
+msgid "Minimum Bid"
+msgstr "Offre minimale"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:148
+msgid "Mint NFT"
+msgstr "Monnaie NFT"
+
+#: src/pages/Meeting.jsx:25
+msgid "MUST BE MEMBER & HOLD PASS TO ATTEND EVENTS"
+msgstr "IL FAUT ÊTRE MEMBRE ET DÉTENIR UN LAISSEZ-PASSER POUR ASSISTER AUX ÉVÉNEMENTS"
+
+#: src/components/Home/Hero.jsx:44
+#: src/components/Wallet/HeroN.jsx:19
+msgid "must have"
+msgstr "doit avoir"
+
+#: src/components/NFTs/Market/721/buy.jsx:56
+#: src/components/NFTs/Market/721/sell.jsx:66
+msgid "NAME :"
+msgstr "NOM :"
+
+#: src/pages/NFTDetail/[id].jsx:134
+msgid "Name:"
+msgstr "Nom :"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:346
+msgid "Need Support !"
+msgstr "Besoin de soutien !"
+
+#: src/components/Campaigns/AllCampaigns/DisplayCampaigns.jsx:30
+msgid "No Campaigns Found"
+msgstr "Aucune campagne trouvée"
+
+#: src/pages/Meeting.jsx:24
+msgid "NO MEETING AVAILABLE"
+msgstr "PAS DE RÉUNION DISPONIBLE"
+
+#: src/components/profile/profile/PASSNFT.jsx:140
+msgid "No metadata for this NFT"
+msgstr "Pas de métadonnées pour ce NFT"
+
+#: src/components/profile/profile/AllBaseNFT.jsx:111
+#: src/components/profile/profile/BaseOwnedCreate.jsx:123
+msgid "No NFTs found. Mint an NFT"
+msgstr "Aucun NFT n'a été trouvé. Imprimer un NFT"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:60
+msgid "Not Listed"
+msgstr "Non listé"
+
+#: src/pages/NFTs/Market.jsx:39
+msgid "OWN"
+msgstr "OWN"
+
+#: src/components/NFTs/Card/web3banner.jsx:20
+msgid "OWN POLY & BSC NFTs or BULLSC-BULLS TOKEN,--"
+msgstr "NFTs POLY & BSC ou BULLSC-BULLS TOKEN,--"
+
+#: src/pages/NFTs/Friends.jsx:34
+msgid "Owned"
+msgstr "Propriétaire"
+
+#: src/components/profile/profile/BaseOwnedCreate.jsx:112
+msgid "OWNED BASE NFTs"
+msgstr "BASE PROPRIÉTÉ NFTs"
+
+#: src/components/NFTs/Passminter.jsx:212
+msgid "PASS"
+msgstr "PASSER"
+
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:78
+msgid "PASS HOLDER"
+msgstr "PORTE-PASSE"
+
+#: src/components/Wallet/Bearwallet/BullStaker.jsx:12
+msgid "Please Connect a Wallet"
+msgstr "Veuillez connecter un portefeuille"
+
+#: src/components/NFTs/Card/web3banner.jsx:17
+msgid "Polygon & BSC NFTs Collections"
+msgstr "Collections Polygon & BSC NFTs"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:150
+msgid "Post your Campaign"
+msgstr "Publiez votre campagne"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:45
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:59
+msgid "Price"
+msgstr "Prix"
+
+#: src/components/profile/TreasureHunt/Components/ShopItem.tsx:34
+msgid "Price:"
+msgstr "Prix :"
+
+#: src/components/NFTs/Memberminter.jsx:255
+#: src/components/NFTs/Passminter.jsx:253
+msgid "Quantity"
+msgstr "Quantité"
+
+#: src/pages/Campaigns/AllCampaigns.jsx:24
+msgid "Raise fund"
+msgstr "Collecte de fonds"
+
+#: src/components/Home/Hero.jsx:26
+msgid "Raise WEB3 fund for any occasion,"
+msgstr "Lever des fonds WEB3 pour n'importe quelle occasion,"
+
+#: src/components/Campaigns/FundCard.jsx:67
+msgid "Raised of"
+msgstr "Relevés de"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:162
+msgid "Receive 100% of Your Raised Funds"
+msgstr "Recevez 100 % des fonds collectés"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:147
+msgid "Reward Token:"
+msgstr "Jeton de récompense :"
+
+#: src/pages/addressbook.jsx:45
+msgid "ROYALS"
+msgstr "ROYALS"
+
+#: src/components/Wallet/Bearwallet/BearWallet.jsx:102
+#: src/components/Wallet/BullWallet.jsx:118
+msgid "SEND"
+msgstr "ENVOYER"
+
+#: src/components/profile/TreasureHunt/Components/OwnedCones.tsx:80
+msgid "Send To Work"
+msgstr "Envoyer au travail"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:137
+msgid "SHOP FOR WORKERS"
+msgstr "MAGASIN POUR LES TRAVAILLEURS"
+
+#: src/components/NFTs/Memberminter.jsx:276
+#: src/components/NFTs/Passminter.jsx:274
+msgid "Sold Out"
+msgstr "Épuisé"
+
+#: src/components/profile/profile/MyNFTs.jsx:173
+#: src/components/profile/profile/PASSNFT.jsx:136
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:109
+msgid "Stake"
+msgstr "Enjeu"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:61
+msgid "STAKE BULL EARN BEARS"
+msgstr "STAKE BULL EARN BEARS"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:66
+msgid "Stake Token:"
+msgstr "Jeton d'enjeu :"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:266
+msgid "Story"
+msgstr "Histoire"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:333
+msgid "Support the cause, just because you want to."
+msgstr "Soutenez la cause, juste parce que vous le voulez."
+
+#: src/components/Wallet/Exchange.jsx:52
+msgid "SWAP"
+msgstr "SWAP"
+
+#: src/components/NFTs/Memberminter.jsx:249
+#: src/components/NFTs/Passminter.jsx:246
+msgid "This drop is not ready to be minted yet. (No claim condition set)"
+msgstr "Cette goutte n'est pas encore prête à être frappée. (Aucune condition de réclamation définie)"
+
+#: src/components/NFTs/Card/web3banner.jsx:24
+msgid "To"
+msgstr "A"
+
+#: src/components/NFTs/Memberminter.jsx:228
+#: src/components/NFTs/Passminter.jsx:226
+msgid "Total Minted"
+msgstr "Total Frappé"
+
+#: src/components/Campaigns/CreateCampaign/Loader.jsx:14
+msgid "Transaction in progress"
+msgstr "Transaction en cours"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:51
+msgid "TREASURE"
+msgstr "TRÉSOR"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:134
+msgid "Unstake"
+msgstr "Déstockage"
+
+#: src/components/NFTs/Card/Stake-Unstake/NFTCard.jsx:36
+msgid "UNSTAKE"
+msgstr "Déstockage"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:119
+msgid "Upload an Image to Mint!"
+msgstr "Télécharger une image sur Mint !"
+
+#: src/components/Home/Hero1.jsx:32
+msgid "W3B public blockchain-based Identity, decentralized domains that give users complete control and ownership"
+msgstr "W3B public blockchain-based Identity, domaines décentralisés qui donnent aux utilisateurs un contrôle et une propriété complets"
+
+#: src/components/Home/Hero1.jsx:28
+msgid "WEB3 NFT DOMAINS"
+msgstr "DOMAINES WEB3 NFT"
+
+#: src/components/NFTs/Card/Stake-Unstake/NFTCard1.jsx:33
+msgid "Withdraw"
+msgstr "Se retirer"
+
+#: src/pages/NFTs/NFTbase.jsx:40
+msgid "You need some $BEARS to get a PASS"
+msgstr "Il faut des $BEARS pour obtenir un PASS"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:111
+msgid "Your CLONE WORKERS"
+msgstr "Vos COLLABORATEURS"

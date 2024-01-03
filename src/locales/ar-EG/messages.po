@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-12-13 15:36-0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ar-EG\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/NFTs/NFTbase.jsx:52
+msgid "\"Brave members, handpicked for a groundbreaking cloning ritual to power our club's future expeditions. Mint one of the chosen few, and you'll enjoy a thrilling return of 314,000 $BEARS & 31415 $BULL! Mint a Royalty, your destiny awaits with a majestic bounty 1,300,000$BEARS & 131,000 $BULL. Join the adventure now!\""
+msgstr "\"أعضاء شجعان، تم اختيارهم بعناية للقيام بطقوس استنساخ رائدة لدعم الرحلات الاستكشافية المستقبلية لنادينا. اصنع واحدة من القلائل المختارين، وسوف تستمتع بعائد مثير قدره 314000 BULL  و31415 BEARS! اصنع ملكية، مصيرك ينتظر مع مكافأة مهيبة بقيمة 1,300,000 BEARS و 131,000 BULL. انضم إلى المغامرة الآن!\""
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:59
+msgid "\"Get a pass, obtain a Clone-Worker, and set them to work! Want BEARS to recruit a WORKER? Acquire them through staking BULL tokens or just Swap BEARS for BULL from wallet.\""
+msgstr "\"احصل على تصريح، واحصل على Clone-Worker، وقم بتعيينهم للعمل! هل تريد BEARS$؟ احصل عليهم من خلال Staking  BULL أو فقط قم بمبادلة BEARS بـ BULL من المحفظة.\""
+
+#: src/components/NFTs/Card/BaseGalery.jsx:88
+msgid "\"Only one member possesses the Eye of Ra, and their Identity remains a Mystery.\""
+msgstr "\"عضو واحد فقط يمتلك عين رع، وهويته تظل لغزا.\""
+
+#: src/pages/Campaigns/AllCampaigns.jsx:17
+msgid "\"Whether it's an adventurous journey, an educational dream, a celebration, or a game-changing idea, turn your dreams into reality with fundraising.\""
+msgstr "\"سواء كانت رحلة مليئة بالمغامرات، أو حلمًا تعليميًا، أو احتفالًا، أو فكرة تغير قواعد اللعبة، حوّل أحلامك إلى حقيقة من خلال جمع التبرعات.\""
+
+#: src/components/Home/CampaignsHP.jsx:70
+msgid "Active Fundraisers"
+msgstr "جمع التبرعات النشطة"
+
+#: src/components/Wallet/BullWallet.jsx:125
+msgid "AIRDROP"
+msgstr "إنزال جوي"
+
+#: src/pages/NFTs/OwnedFriends.jsx:12
+msgid "ALL Friends"
+msgstr "كل الأصدقاء"
+
+#: src/components/Campaigns/AllCampaigns/Campaigns.jsx:67
+msgid "ALL Fundraisers"
+msgstr "جميع  التبرعات"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:102
+msgid "animals"
+msgstr "الحيوانات"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:297
+msgid "Anonymous!"
+msgstr "مجهول!"
+
+#: src/components/profile/profile/MyNFTs.jsx:129
+msgid "Balance"
+msgstr "رصيد حساب"
+
+#: src/components/Wallet/Bearwallet/BearWallet.jsx:91
+msgid "BALANCE"
+msgstr "رصيد حساب"
+
+#: src/pages/FlipCoin.jsx:119
+msgid "Balance :"
+msgstr "رصيد حساب"
+
+#: src/components/Wallet/tokendrop.jsx:64
+msgid "Balance:"
+msgstr "رصيد حساب"
+
+#: src/components/Home/BaseBanner.jsx:31
+msgid "BASE NFT PASS & MEMBERS"
+msgstr "بطاقة NFT الأساسية والأعضاء"
+
+#: src/components/Home/Hero.jsx:19
+msgid "BASE-MAINNET DAPP"
+msgstr "DAPP BASE-MAINNET"
+
+#: src/components/profile/profile/AllBaseNFT.jsx:97
+msgid "BASE-MAINNET Owned NFTs"
+msgstr "NFTs المملوكة لـ BASE-MAINNET"
+
+#: src/components/NFTs/Market/721/buy.jsx:61
+#: src/components/NFTs/Market/721/sell.jsx:71
+msgid "BIRTH ZODIAC :"
+msgstr "برج الميلاد :"
+
+#: src/components/NFTs/Card/web3banner.jsx:22
+msgid "BRIDGE --"
+msgstr "كوبري --"
+
+#: src/pages/Bridge.jsx:22
+msgid "Bridge BULL Polygon & BSC TOKENs FOR BULL-BASE"
+msgstr "جسر BULL Polygon & BSC TOKENs واحصل على BULL-BASE"
+
+#: src/pages/Campaigns/AllCampaigns.jsx:27
+msgid "BRIDGE TO"
+msgstr "جسر إلى"
+
+#: src/pages/FlipCoin.jsx:98
+msgid "BULL OR BEAR"
+msgstr "الثور أو الدب"
+
+#: src/components/profile/profile/PASSNFT.jsx:101
+msgid "BULL-BASE Balance"
+msgstr "رصيد BULL-BASE"
+
+#: src/components/Wallet/BullWallet.jsx:107
+msgid "BULLS-BASE BALANCE"
+msgstr "رصيد BULL-BASE"
+
+#: src/pages/Bridge.jsx:31
+msgid "BURN Club Polygon & BSC NFTs FOR BULL-BASE MYSTERY BOX"
+msgstr "حرق Club Polygon و BSC NFTs  يحصل صندوق الغموض"
+
+#: src/components/profile/TreasureHunt/Components/ShopItem.tsx:49
+msgid "Buy"
+msgstr "شراء"
+
+#: src/components/Wallet/HeroN.jsx:16
+msgid "Campaigns"
+msgstr "الحملات"
+
+#: src/pages/NFTDetail/[id].jsx:151
+msgid "Chain:"
+msgstr "سلسلة:"
+
+#: src/pages/Meeting.jsx:30
+msgid "Check out Club conference @Spot"
+msgstr "تحقق من مؤتمر النادي @Spot"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:178
+#: src/components/Wallet/tokendrop.jsx:72
+msgid "Claim"
+msgstr "مطالبة"
+
+#: src/components/profile/profile/MyNFTs.jsx:142
+#: src/components/profile/profile/PASSNFT.jsx:110
+msgid "Claim Rewards"
+msgstr "مطالبة"
+
+#: src/components/profile/profile/MyNFTs.jsx:116
+#: src/components/profile/profile/PASSNFT.jsx:90
+msgid "Claimable Rewards"
+msgstr "المكافآت القابلة للمطالبة بها"
+
+#: src/pages/addressbook.jsx:46
+msgid "CLONED MEMBERS"
+msgstr "الأعضاء المستنسخين"
+
+#: src/components/App/footer.jsx:8
+msgid "Copyright:"
+msgstr "حقوق النشر:"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:85
+msgid "Create a Fundraiser"
+msgstr "إنشاء حملة لجمع التبرعات"
+
+#: src/components/Home/Hero.jsx:23
+msgid "Create A Fundraiser"
+msgstr "إنشاء حملة لجمع التبرعات"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:98
+msgid "Create BULL Friend NFT"
+msgstr "إنشاء BULL Friend NFT"
+
+#: src/components/profile/profile/MyCampaigns.jsx:72
+msgid "Create Campaign"
+msgstr "إنشاء حملة"
+
+#: src/pages/NFTs/Market.jsx:34
+#: src/pages/NFTs/NFTbase.jsx:61
+msgid "Create NFT"
+msgstr "إنشاء NFT"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:243
+msgid "Creator"
+msgstr "المنشئ"
+
+#: src/components/Campaigns/FundCard.jsx:78
+msgid "Days Left"
+msgstr "ايام متبقية"
+
+#: src/pages/NFTDetail/[id].jsx:142
+msgid "Description:"
+msgstr "وصف:"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:336
+msgid "Donate"
+msgstr "تبرع"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:311
+msgid "Donate to campaign"
+msgstr "تبرع للحملة"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:277
+msgid "Donators"
+msgstr "المانحون"
+
+#: src/components/profile/TreasureHunt/Components/ApproxRewards.tsx:62
+msgid "Earned this session:"
+msgstr "حصلت على هذه الدورة:"
+
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:62
+msgid "Error"
+msgstr "خطأ"
+
+#: src/pages/Meeting.jsx:33
+msgid "Events to be announced"
+msgstr "الأحداث  سيتم الإعلان عنها"
+
+#: src/pages/addressbook.jsx:47
+msgid "EYE OF RA HOLDER"
+msgstr "عين RA حامل"
+
+#: src/components/NFTs/Market/721/buy.jsx:59
+#: src/components/NFTs/Market/721/sell.jsx:69
+msgid "FAMILY :"
+msgstr "عائلة :"
+
+#: src/components/NFTs/Market/721/buy.jsx:65
+#: src/components/NFTs/Market/721/sell.jsx:75
+msgid "Favorite Location :"
+msgstr "الموقع المفضل :"
+
+#: src/pages/FlipCoin.jsx:69
+msgid "Flip again!"
+msgstr " مرة أخرى!"
+
+#: src/pages/FlipCoin.jsx:109
+msgid "Flip!"
+msgstr "تقليب"
+
+#: src/pages/NFTs/NFTbase.jsx:54
+msgid "Found the EYE of Ra?! Recieve 314000 BULL & 5 MIL BEARS, only 133 unique members \"Legacy Phase\""
+msgstr "العثور على عين رع؟! احصل على 314000 BULL و5 MIL BEARS عضوًا فريدًا فقط \"Legacy Phase\" 133 "
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:91
+msgid "Friends"
+msgstr "أصدقاء"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:306
+msgid "Fund"
+msgstr "تمويل"
+
+#: src/pages/FlipCoin.jsx:117
+msgid "Game Contract"
+msgstr "عقد اللعبة"
+
+#: src/pages/NFTs/NFTbase.jsx:58
+msgid "Get Member with Debit/Credit Card"
+msgstr "احصل على عضو ببطاقة الخصم/الائتمان"
+
+#: src/components/Home/Hero.jsx:29
+msgid "Happy Event, Travel, Education, Party, Game or Any Idea you may have"
+msgstr "حدث سعيد، أو سفر، أو تعليم، أو حفلة، أو لعبة أو أي فكرة قد تكون لديكم"
+
+#: src/components/Wallet/HeroN.jsx:12
+msgid "Happy Event, Travel, Education, Party, Game or Any other thing in your mind"
+msgstr "حدث سعيد، سفر، تعليم، حفلة، لعبة أو أي شيء آخر في ذهنك"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:102
+msgid "Hint: Our Friends are cool"
+msgstr "تلميح: أصدقاؤنا رائعون"
+
+#: src/components/profile/TreasureHunt/Components/GamePlayAnimation.jsx:39
+msgid "I Need a Worker!"
+msgstr "أحتاج إلى عامل!"
+
+#: src/components/Wallet/HeroN.jsx:19
+msgid "in your wallet"
+msgstr "في محفظتك"
+
+#: src/components/Home/Hero.jsx:50
+msgid "in your wallet to interact with our DAPP"
+msgstr "في محفظتك للتفاعل مع DAPP لدينا"
+
+#: src/pages/NFTs/NFTbase.jsx:41
+msgid "LEGACY MEMBER FEE"
+msgstr "رسوم الأعضاء"
+
+#: src/components/profile/profile/MyNFTs.jsx:110
+msgid "Legacy Member NFT Staked generate an annual yield of 835,000 BEARS tokens"
+msgstr "يُنتج العضو NFT Staked عائدًا سنويًا قدره 835000  BEARS$"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:55
+msgid "Legend tells of Lost BULL token treasures scattered worldwide. Mando the 2nd confirms his grandfather, Mando the 1st, acknowledged their existence. It is a quest to find these tokens. Join the hunt as a CLONE-WORKER and seize your Share!"
+msgstr "تحكي الأسطورة عن كنوز  BULL الرمزية المنتشرة في جميع أنحاء العالم. يؤكد ماندو الثاني أن جده ماندو الأول اعترف بوجودهم. إنها مهمة للعثور على هذه الرموز. انضم إلى الصيد كعامل مستنسخ واحصل على حصتك!"
+
+#: src/components/Wallet/tokendrop.jsx:61
+msgid "Loading Balance..."
+msgstr "جارٍ تحميل الرصيد..."
+
+#: src/components/NFTs/Memberminter.jsx:239
+#: src/components/NFTs/Passminter.jsx:207
+#: src/components/NFTs/Passminter.jsx:237
+#: src/components/profile/profile/AllBaseNFT.jsx:115
+#: src/components/profile/profile/BaseOwnedCreate.jsx:127
+#: src/components/profile/TreasureHunt/Components/LoadingSection.jsx:5
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:57
+msgid "Loading..."
+msgstr "تحميل..."
+
+#: src/components/NFTs/Market/721/buy.jsx:63
+#: src/components/NFTs/Market/721/sell.jsx:73
+msgid "Lucky Token :"
+msgstr "رمز الحظ :"
+
+#: src/components/profile/profile/PASSNFT.jsx:114
+msgid "Member NFT Staked generate an annual yield of 438,000 BULL tokens"
+msgstr "يُنتج العضو NFT Staked عائدًا سنويًا قدره 438,000  BULL$"
+
+#: src/components/NFTs/Market/721/buy.jsx:68
+#: src/components/NFTs/Market/721/sell.jsx:78
+msgid "MEMBER NUM :"
+msgstr "رقم العضو :"
+
+#: src/pages/NFTs/Friends.jsx:39
+msgid "Members"
+msgstr "أعضاء"
+
+#: src/pages/NFTs/MarketSell.jsx:15
+#: src/pages/NFTs/NFTbase.jsx:33
+msgid "MEMBERS"
+msgstr "أعضاء"
+
+#: src/pages/FlipCoin.jsx:97
+msgid "Members Early Access @Q4/2024"
+msgstr "وصول المبكر للأعضاء @Q4/2024"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:52
+msgid "Minimum Bid"
+msgstr "الحد الأدنى للمزايدة"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:148
+msgid "Mint NFT"
+msgstr "سك NFT"
+
+#: src/pages/Meeting.jsx:25
+msgid "MUST BE MEMBER & HOLD PASS TO ATTEND EVENTS"
+msgstr "يجب أن يكون عضوًا وأن يحمل تصريحًا لحضور الأحداث"
+
+#: src/components/Home/Hero.jsx:44
+#: src/components/Wallet/HeroN.jsx:19
+msgid "must have"
+msgstr "يجب ان يملك"
+
+#: src/components/NFTs/Market/721/buy.jsx:56
+#: src/components/NFTs/Market/721/sell.jsx:66
+msgid "NAME :"
+msgstr "اسم :"
+
+#: src/pages/NFTDetail/[id].jsx:134
+msgid "Name:"
+msgstr "اسم :"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:346
+msgid "Need Support !"
+msgstr "بحاجة إلى دعم !"
+
+#: src/components/Campaigns/AllCampaigns/DisplayCampaigns.jsx:30
+msgid "No Campaigns Found"
+msgstr "لم يتم العثور على حملات"
+
+#: src/pages/Meeting.jsx:24
+msgid "NO MEETING AVAILABLE"
+msgstr "لا يوجد اجتماع متاح"
+
+#: src/components/profile/profile/PASSNFT.jsx:140
+msgid "No metadata for this NFT"
+msgstr "لا توجد بيانات وصفية لهذا NFT"
+
+#: src/components/profile/profile/AllBaseNFT.jsx:111
+#: src/components/profile/profile/BaseOwnedCreate.jsx:123
+msgid "No NFTs found. Mint an NFT"
+msgstr "لم يتم العثور على NFTs. صك NFT"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:60
+msgid "Not Listed"
+msgstr "غير مدرج"
+
+#: src/pages/NFTs/Market.jsx:39
+msgid "OWN"
+msgstr "ملك"
+
+#: src/components/NFTs/Card/web3banner.jsx:20
+msgid "OWN POLY & BSC NFTs or BULLSC-BULLS TOKEN,--"
+msgstr "انت تملك  BULL Polygon & BSC TOKENs"
+
+#: src/pages/NFTs/Friends.jsx:34
+msgid "Owned"
+msgstr "مملوكة"
+
+#: src/components/profile/profile/BaseOwnedCreate.jsx:112
+msgid "OWNED BASE NFTs"
+msgstr "NFTs المملوكة @ BASE-MAINNET"
+
+#: src/components/NFTs/Passminter.jsx:212
+msgid "PASS"
+msgstr "جواز مرور"
+
+#: src/components/profile/TreasureHunt/MyNFTs1.jsx:78
+msgid "PASS HOLDER"
+msgstr "جواز مرور"
+
+#: src/components/Wallet/Bearwallet/BullStaker.jsx:12
+msgid "Please Connect a Wallet"
+msgstr "يرجى توصيل المحفظة"
+
+#: src/components/NFTs/Card/web3banner.jsx:17
+msgid "Polygon & BSC NFTs Collections"
+msgstr "مجموعات Polygon وBSC NFTs"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:150
+msgid "Post your Campaign"
+msgstr "انشر حملتك"
+
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:45
+#: src/components/NFTs/Market/721/NFTMarketCard721.jsx:59
+msgid "Price"
+msgstr "سعر"
+
+#: src/components/profile/TreasureHunt/Components/ShopItem.tsx:34
+msgid "Price:"
+msgstr "سعر:"
+
+#: src/components/NFTs/Memberminter.jsx:255
+#: src/components/NFTs/Passminter.jsx:253
+msgid "Quantity"
+msgstr "كمية"
+
+#: src/pages/Campaigns/AllCampaigns.jsx:24
+msgid "Raise fund"
+msgstr "تمويل"
+
+#: src/components/Home/Hero.jsx:26
+msgid "Raise WEB3 fund for any occasion,"
+msgstr "جمع صندوق WEB3 في أي مناسبة،"
+
+#: src/components/Campaigns/FundCard.jsx:67
+msgid "Raised of"
+msgstr "تمويل"
+
+#: src/components/Campaigns/CreateCampaign/create.jsx:162
+msgid "Receive 100% of Your Raised Funds"
+msgstr "احصل على 100% من أموالك التي تم جمعها"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:147
+msgid "Reward Token:"
+msgstr "رمز المكافأة:"
+
+#: src/pages/addressbook.jsx:45
+msgid "ROYALS"
+msgstr "العائلة المالكة"
+
+#: src/components/Wallet/Bearwallet/BearWallet.jsx:102
+#: src/components/Wallet/BullWallet.jsx:118
+msgid "SEND"
+msgstr "يرسل"
+
+#: src/components/profile/TreasureHunt/Components/OwnedCones.tsx:80
+msgid "Send To Work"
+msgstr "إرسال إلى العمل"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:137
+msgid "SHOP FOR WORKERS"
+msgstr "تسوق للعمال"
+
+#: src/components/NFTs/Memberminter.jsx:276
+#: src/components/NFTs/Passminter.jsx:274
+msgid "Sold Out"
+msgstr "نفذ"
+
+#: src/components/profile/profile/MyNFTs.jsx:173
+#: src/components/profile/profile/PASSNFT.jsx:136
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:109
+msgid "Stake"
+msgstr "حصة"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:61
+msgid "STAKE BULL EARN BEARS"
+msgstr "دعم BULL يحصل BEARS"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:66
+msgid "Stake Token:"
+msgstr "حصة"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:266
+msgid "Story"
+msgstr "قصة"
+
+#: src/pages/Campaigns/CampaignDetails.jsx:333
+msgid "Support the cause, just because you want to."
+msgstr "ادعم القضية، فقط لأنك تريد ذلك."
+
+#: src/components/Wallet/Exchange.jsx:52
+msgid "SWAP"
+msgstr "تبديل"
+
+#: src/components/NFTs/Memberminter.jsx:249
+#: src/components/NFTs/Passminter.jsx:246
+msgid "This drop is not ready to be minted yet. (No claim condition set)"
+msgstr "هذه القطرة ليست جاهزة للسك بعد. (لم يتم تحديد شرط المطالبة)"
+
+#: src/components/NFTs/Card/web3banner.jsx:24
+msgid "To"
+msgstr "ل"
+
+#: src/components/NFTs/Memberminter.jsx:228
+#: src/components/NFTs/Passminter.jsx:226
+msgid "Total Minted"
+msgstr "إجمالي السك"
+
+#: src/components/Campaigns/CreateCampaign/Loader.jsx:14
+msgid "Transaction in progress"
+msgstr "المعاملة قيد التقدم"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:51
+msgid "TREASURE"
+msgstr "كنز"
+
+#: src/components/Wallet/Bearwallet/Stake/Stke.jsx:134
+msgid "Unstake"
+msgstr "غير مستقر"
+
+#: src/components/NFTs/Card/Stake-Unstake/NFTCard.jsx:36
+msgid "UNSTAKE"
+msgstr "لا تخاطر"
+
+#: src/components/NFTs/Market/create/CreateNft.jsx:119
+msgid "Upload an Image to Mint!"
+msgstr "تحميل صورة إلى السك!"
+
+#: src/components/Home/Hero1.jsx:32
+msgid "W3B public blockchain-based Identity, decentralized domains that give users complete control and ownership"
+msgstr "هوية W3B العامة المستندة إلى blockchain، والمجالات اللامركزية التي تمنح المستخدمين التحكم والملكية الكاملة"
+
+#: src/components/Home/Hero1.jsx:28
+msgid "WEB3 NFT DOMAINS"
+msgstr "مجالات WEB3 NFT"
+
+#: src/components/NFTs/Card/Stake-Unstake/NFTCard1.jsx:33
+msgid "Withdraw"
+msgstr "ينسحب"
+
+#: src/pages/NFTs/NFTbase.jsx:40
+msgid "You need some $BEARS to get a PASS"
+msgstr "أنت بحاجة إلى بعض الدببة $ للحصول على تصريح مرور"
+
+#: src/components/profile/TreasureHunt/TreasureHunt.jsx:111
+msgid "Your CLONE WORKERS"
+msgstr "عمالك المستنسخين"

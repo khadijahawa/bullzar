@@ -1,0 +1,1281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  --bg-color: bg-gray-100;
+  --text-color: text-black;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: bg-gray-800;
+  --text-color: text-white;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.gradient-text-0 {
+  background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-1 {
+  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-2 {
+  background: -webkit-linear-gradient(#bfa3da, #743f93);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-3 {
+  background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+  text-decoration-color: #84309c;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.connect {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #555;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #131313;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 440px;
+  overflow: none;
+  border: none;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 12px;
+  border: none;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  background-color: #272c34;
+  opacity: 80%;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+}
+
+.card,
+.footer {
+  border-color: #222;
+}
+.logo img {
+  filter: invert(1);
+}
+
+.coin-container {
+  display: flex;
+  width: 100%; /* 80% of the parent container's width */
+  height: auto;
+  justify-content: center;
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+
+  border-bottom: 1px solid #d7d7d7;
+  width: 900px;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+
+  min-width: 300px;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-data {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coin-price {
+  width: 110px;
+}
+
+.coin-volume {
+  width: 155px;
+}
+
+.coin-marketcap {
+  width: 230px;
+}
+
+.coin-percent {
+  width: 100px;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
+}
+
+/* Add styles for the NFTCard component */
+.nft-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+/* Add this CSS to your stylesheet */
+.nft-card {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 150px;
+  margin: 0 auto;
+}
+
+.card-details h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.card-details p {
+  margin: 5px 0;
+}
+
+.nft-card h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.nft-card p {
+  margin: 5px 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.tokenSection {
+  margin: 20px;
+}
+
+.tokenGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tokenItem {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.stakedNftsSection,
+.unstakedNftsSection {
+  margin: 20px;
+}
+
+.nftRowGrid {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 20px;
+}
+
+.nftRowGrid > div {
+  width: flex;
+  padding: 20px;
+  text-align: center;
+}
+
+.nftRowGrid > div h3 {
+  margin-top: 10px;
+}
+
+.nftRowGrid > div > button {
+  margin-top: 10px;
+}
+
+.no-border {
+  border: none;
+}
+
+/* Token Card Container */
+.token-card {
+  width: 100%; /* 80% of the parent container's width */
+  height: 550px; /* 750px in height */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  margin-top: 20px; /* Margin from the top */
+  background-color: transparent; /* Transparent background */
+}
+
+.token-card1 {
+  width: 100%; /* 80% of the parent container's width */
+  height: auto; /* Automatically adjust height based on content */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px; /* Margin from the top */
+  background-color: transparent; /* Transparent background */
+}
+
+.token-card2 {
+  width: 100%;
+  max-width: 1300px; /* Set a maximum width for the card */
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2px;
+  text-align: center;
+  margin-top: 30px auto; /* Center the card on the page */
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.token-card2 p {
+  text-align: left;
+  margin-left: 20px; /* Adjusted margin for the addresses */
+  padding: 10px;
+}
+
+.token-card2 a {
+  color: #007bff; /* Set the link color to blue or your preferred color */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .token-card2 p {
+    margin-left: 5px; /* Adjusted margin for smaller screens */
+  }
+}
+.token-card5 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 2px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.token-card5 > * {
+  flex: 1;
+  max-width: 50%;
+  margin: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Token Logo */
+.token-logo {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the logo horizontally */
+  display: block;
+}
+
+/* Token Balance */
+.token-balance {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 16px;
+  padding: 50px;
+}
+
+/* Transfer Button */
+.transfer-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+}
+.transfer-button1 {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 30px;
+}
+.transfer-button2 {
+  background-color: #4230c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 30px;
+}
+
+/* Add hover effect for the button */
+.transfer-button:hover {
+  background-color: transparent;
+}
+
+.Web3Button {
+  background-color: transparent;
+}
+
+.Web3Button1 {
+  background-color: blue;
+}
+
+.fade-in-breathe {
+  animation: fadeInBreathe 2s ease-in-out infinite; /* Animation name, duration, timing function, and infinite loop */
+}
+
+@keyframes fadeInBreathe {
+  0%,
+  100% {
+    opacity: 1; /* Start and end with full opacity */
+    transform: scale(1); /* Start and end with the original size */
+  }
+  50% {
+    opacity: 1; /* Maintain full opacity during the breathing effect */
+    transform: scale(1.1); /* Enlarge the image at 50% of animation duration */
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(5px, 0);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Styles for the modal and close button */
+.modal-popup1 {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.close-button1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.modal-overlay1 {
+  position: fixed;
+  color: #fff;
+  top: 50%; /* Vertical center */
+  left: 50%; /* Horizontal center */
+  transform: translate(-50%, -50%); /* Center the modal */
+  width: 40%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+/* Modal content */
+.modal-content1 {
+  background-color: rgb(189, 205, 212); /* White background */
+  border: 2px solid #2d3437; /* Dark gray border */
+  border-radius: 8px; /* Rounded edges */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 80%; /* Adjust the width as needed */
+  text-align: center;
+  
+  margin: 20px; /* Add spacing between modal content and border */
+}
+
+.create-nft {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.create-nft .create-nft-form input,
+.create-nft .create-nft-form select,
+.create-nft .create-nft-form textarea {
+  background: #ffffff;
+  color: #6f7d95;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+.create-nft .create-nft-form input:focus,
+.create-nft .create-nft-form select:focus,
+.create-nft .create-nft-form textarea:focus {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0);
+}
+.create-nft .create-nft-form textarea {
+  height: 150px;
+}
+.create-nft .upload-item {
+  border: 2px dashed rgba(255, 255, 255, 0);
+  padding: 30px 15px;
+  border-radius: 12px;
+  background: rgba(244, 246, 249, 0);
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .create-nft .upload-item {
+    padding: 25px 15px;
+  }
+}
+.create-nft .upload-item .custom-upload {
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.create-nft .upload-item .custom-upload:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+.create-nft .upload-item:hover {
+  background: rgba(244, 246, 249, 0);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: #ffffff00;
+  opacity: 0.8;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 64px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+
+  /* before */
+}
+
+.slider::before {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 400px;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 400px;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slideTrack {
+  animation: scroll 15s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+
+.ourCollection {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.collectionContainer {
+  width: 1200px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.nftGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nftItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 16px;
+  padding: 8px;
+  margin-top: 12px;
+  padding-left: 16px;
+}
+.explain {
+  font-size: 1.125rem;
+}
+
+.purple {
+  color: #9f2c9d;
+}
+
+.divider {
+  width: 50%;
+  border-color: grey;
+  opacity: 0.25;
+}
+
+.smallDivider {
+  width: 25%;
+  border-color: grey;
+  margin-top: 64px;
+  opacity: 0.25;
+}
+
+
+.mainSection {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* On mobile */
+@media screen and (max-width: 1000px) {
+  .mainSection {
+    flex-direction: column;
+  }
+}
+
+.nftBoxGrid {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Adjust alignment as needed */
+  justify-content: space-between; /* Adjust alignment as needed */
+  gap: 1%;
+  margin-top: 15px;
+  padding: 0.5em;
+}
+
+.nftBox {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  width: calc(50% - 1%); /* Adjust width and gap as needed */
+  min-height: 250px;
+}
+
+@media only screen and (min-width: 800px) {
+  .nftBox {
+    width: calc(25% - 1%); /* Adjust width and gap as needed */
+    margin-top: 16px;
+  }
+}
+
+/* beneath 800 */
+@media only screen and (max-width: 800px) {
+  .nftBoxGrid {
+    justify-content: center;
+  }
+  .nftBox {
+    width: 90%;
+    margin-top: 16px;
+  }
+}
+
+.nftMedia {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+mainSection {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+} /* On mobile */
+@media screen and (max-width: 1000px) {
+  .mainSection {
+    flex-direction: column;
+  }
+}
+
+[disabled] button,
+button[disabled] {
+  box-shadow: none;
+  background-color: var(--light-gray);
+  color: gray;
+  cursor: not-allowed;
+  transform: none;
+}
+[disabled] button {
+  text-indent: -900em;
+  width: 2em;
+  position: relative;
+}
+[disabled] button:after {
+  content: " ";
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: var(--fg) transparent var(--fg) transparent;
+  animation: loader 1.2s linear infinite;
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bet {
+  cursor: pointer;
+}
+
+.bet:hover,
+.bet:focus {
+  opacity: 0.7;
+}
+
+.playbutton {
+  cursor: pointer;
+}
+
+.playbutton:hover,
+.playbutton:focus {
+  opacity: 0.5;
+}
+
+fieldset {
+  border: none;
+  padding: 2em 0;
+}
+
+input {
+  background-color: var(--shadow);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  caret-color: var(--primary);
+  color: inherit;
+  padding: 0.25em 1em;
+}
+input::selection {
+  background-color: var(--secondary);
+  color: #efefef;
+}
+input:focus {
+  box-shadow: 0 0 10em rgba(0, 0, 0, 0.349) inset;
+}
+
+aside {
+  animation: notify ease-in-out 10s;
+  background-color: var(--shadow);
+  border-radius: 5px;
+  bottom: 0;
+  font-size: 0.8em;
+  margin: 1em;
+  padding: 1em;
+  position: fixed;
+  transform: translateY(10em);
+  right: 0;
+}
+aside footer {
+  display: flex;
+  font-size: 0.9em;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+aside footer *:first-child {
+  color: var(--success);
+}
+aside footer *:last-child {
+  color: var(--gray);
+}
+@keyframes notify {
+  0% {
+    transform: translateY(10em);
+  }
+  5% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10em);
+  }
+}
+
+#coin {
+  position: relative;
+  margin: 0 auto;
+  width: 15em;
+  height: 15em;
+  cursor: pointer;
+}
+#coin div {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.side-a {
+  background-image: url(/src/assets/Img/logo3.png);
+  background-size: 15em 15em;
+}
+.side-b {
+  background-image: url(/src/assets/Img/bear.png);
+  background-size: 15em 15em;
+}
+
+#coin {
+  transition: -webkit-transform 1s ease-in;
+  -webkit-transform-style: preserve-3d;
+}
+#coin div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+.side-a {
+  z-index: 100;
+}
+.side-b {
+  -webkit-transform: rotateY(-180deg);
+}
+
+#coin.Heads {
+  -webkit-animation: flipHeads 2s ease-out forwards;
+  -moz-animation: flipHeads 2s ease-out forwards;
+  -o-animation: flipHeads 2s ease-out forwards;
+  animation: flipHeads 2s ease-out forwards;
+}
+#coin.Tails {
+  -webkit-animation: flipTails 2s ease-out forwards;
+  -moz-animation: flipTails 2s ease-out forwards;
+  -o-animation: flipTails 2s ease-out forwards;
+  animation: flipTails 2s ease-out forwards;
+}
+
+#fadeIn {
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  animation: fadeIn 5s;
+}
+
+@keyframes flipHeads {
+  from {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  to {
+    -webkit-transform: rotateY(1800deg);
+    -moz-transform: rotateY(1800deg);
+    transform: rotateY(1800deg);
+  }
+}
+@keyframes flipTails {
+  from {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  to {
+    -webkit-transform: rotateY(1980deg);
+    -moz-transform: rotateY(1980deg);
+    transform: rotateY(1980deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.share-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.share-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -25px; /* Adjust the value based on your design */
+  background-color: #ffffff3d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.share-dropdown a {
+  display: block;
+  padding: 1px;
+  text-decoration: none;
+  color: #333;
+}
+
+.share-container:hover .share-dropdown {
+  display: block;
+}
+
+
+.mintersContainer {
+  display: flex;
+  flex-wrap: wrap;  /* Allow minters to wrap to the next line on small screens */
+  gap: 16px;  /* Adjust the gap between minters as needed */
+}
+
+/* Adjust the styles for Passminter and Memberminter components if needed */
+.mintersContainer > * {
+  flex: 1;  /* Make both components take equal width */
+  max-width: 300px;  /* Set a maximum width for each minter if needed */
+}
+
+.mintcontainer {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.previewImage {
+  height: 500px;
+  width: 500px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 8px;
+}
+
+.mintInfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px;
+  min-height: 200px;
+  max-width: 95vw;
+  gap: 2%;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+}
+
+.description {
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+.imageSide {
+  width: 25%;
+  height: 100%;
+}
+
+.image {
+  width: 85%;
+  border-radius: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary) 0%,
+    var(--color-secondary) 101.52%
+  );
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
+}
+
+.mainButton:hover {
+  opacity: 0.8;
+}
+
+.mintCompletionArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mintAreaLeft {
+  margin-left: 5%;
+  opacity: 0.75;
+}
+
+.mintAreaRight {
+  margin-right: 5%;
+  opacity: 0.75;
+}
+
+.spacerTop {
+  margin-top: 16px;
+}
+
+.spacerBottom {
+  margin-bottom: 16px;
+}
+
+.buttonGapTop {
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.quantityContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.mintContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 24px;
+}
+
+.textInput {
+  width: 75%;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: #fff;
+  height: 48px;
+  padding: 0 16px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.imageInput {
+  width: 100%;
+  height: 100px;
+  border: 1px dashed grey;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  cursor: pointer;
+}
+
+.quantityControlButton {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid grey;
+  color: #fff;
+}
+
+.quantityControlButton:disabled {
+  opacity: 0.25;
+}
+
+
+/* On mobile, make the .mintInfoContainer stack vertically */
+@media screen and (max-width: 850px) {
+  .mintInfoContainer {
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+
+  .infoSide {
+    width: 100%;
+  }
+
+  .mintButton {
+    max-width: 100% !important;
+  }
+
+  .imageSide {
+    width: 100%;
+  }
+}
