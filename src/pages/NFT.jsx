@@ -39,7 +39,7 @@ const NFT = () => {
  </Link>
  <Link className="transfer-button2" to="/CreateNft">
            <Button style={{ marginRight: "20px" }}>
-             <Trans>Create BULL Friend</Trans>
+             <Trans>Create BULL Friend / Q4-2024</Trans>
            </Button>
          </Link>
  <Link to="/Profile" >
