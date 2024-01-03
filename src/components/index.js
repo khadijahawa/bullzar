@@ -9,6 +9,8 @@ export { Map } from "./Common/Model/Map.jsx";
 export { Model } from "./Common/Model/Model.jsx";
 export { Box } from "./Common/Model/MystryBox.jsx";
 export { Portall } from "./Common/Model/Portal.jsx";
+export { Arena } from "./Common/Model/Arena";
+
 //Common //
 export { default as Container } from "./Common/Container/Container";
 

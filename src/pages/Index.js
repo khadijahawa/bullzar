@@ -10,6 +10,7 @@ export { default as AllStatus } from "./AllStatus";
 export { default as Market } from "./Market";
 export { default as BullFlip } from "./BullFlip";
 export { default as CreateNft } from "./CreateNft";
+export { default as Friends } from "./Market/Friends/Friends";
 
 export { default as CampaignDetails } from "./Campagins/CampaignDetails";
 export { default as Campagins } from "./Campagins/Campagins";

@@ -5,7 +5,7 @@ import "./styles/Home.css";
 import { Navbar, Sidebar, Footer } from "./components";
 import {AddressBook, Bridge, Portal, Home, Profile, BullWallet, BearWallet,
   Campagins, NFT, AllStatus, Market, BullFlip, CampaignDetails,
-   CreateCampaign, CreateNft } from "./pages/Index"
+   CreateCampaign, CreateNft, Friends } from "./pages/Index"
 
 
 
@@ -36,6 +36,7 @@ const App = () => {
        <Route path="/CreateCampaign" element={<CreateCampaign />} />
        <Route path="/AllStatus" element={<AllStatus />} />
        <Route path="/CreateNft" element={<CreateNft />} />
+       <Route path="/Friends" element={<Friends />} />
 
 
        <Route path="/CampaignDetails/:title" 
