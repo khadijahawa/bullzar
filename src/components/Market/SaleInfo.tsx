@@ -41,6 +41,14 @@ type DirectFormData = {
 
 
 
+
+
+
+// router  `/token/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`  //
+
+
+
+
 export default function SaleInfo({ nft }: Props) {
   const navigate = useNavigate();
  // Connect to marketplace contract
@@ -235,7 +243,7 @@ return (
               position: "bottom-center",
             });
             navigate(
-              `/token/${nftDropContractAddress}/${nft.metadata.id}`
+              `/NFTDetail/${nft.metadata.id}`
             );
           }}
         >
@@ -336,7 +344,7 @@ return (
               position: "bottom-center",
             });
             navigate(
-              `/token/${nftDropContractAddress}/${nft.metadata.id}`
+              `/NFTDetail/$${nft.metadata.id}`
             );
           }}
         >

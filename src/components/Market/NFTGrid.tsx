@@ -38,7 +38,7 @@ export default function NFTGrid({
 
 
             <Link
-              to={`/token/${nftDropContractAddress}/${nft.metadata.id}`}
+              to={`/NFTDetail/${nft.metadata.id}`}
               key={nft.metadata.id}
               className={styles.nftContainer}
             >

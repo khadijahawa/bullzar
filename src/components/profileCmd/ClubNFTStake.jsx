@@ -15,7 +15,13 @@ import { os, logo11, logo3 } from "../../assets";
 import { useTheme } from "next-themes";
 import { Spacer } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import { nftDropContractAddress,BearToken, stakingContractAddress721   } from "../../constants/contractAddresses";
 import { Trans } from "@lingui/macro";
+
+
+
+
+
 
 const ClubNFTStake = () => {
   const address = useAddress();
@@ -27,6 +33,8 @@ const ClubNFTStake = () => {
   const [claimableRewards, setClaimableRewards] = useState();
   const { data: stakedTokens } = useContractRead(contract, "getStakeInfo", [address]);
   const { theme, setTheme } = useTheme();
+
+
 
   const getTraitValue = (attributes, traitName) => {
     const attribute = attributes?.find((attribute) => attribute.trait_type === traitName);
@@ -48,25 +56,17 @@ const ClubNFTStake = () => {
     loadClaimableRewards();
   }, [address, contract]);
 
-  const stakeNft = async (id) => {
-    try {
-      if (!address) {
-        await nftDropContract.setApprovalForAll(
-          "0x953012Ec85e65Eef98765066615d85CA5f67aC7D",
-          true
-        );
-      }
 
-      // Use await for the stake operation as well
-      await contract.call("stake", [[id]]);
-
-      // Optionally, you can perform additional actions after staking
-      // For example, update UI or state
-    } catch (error) {
-      console.error("Error staking NFT:", error);
-      // Handle the error appropriately (e.g., display a message to the user)
+  
+  async function stakeNft(id) {
+    if (!address)  {
+      await nftDropContract.setApprovalForAll(
+        stakingContractAddress721,
+        true
+      );
     }
-  };
+    await contract.call("stake", [[id]]);
+  }
 
   if (stakingContractIsLoading) {
     return <div>Loading...</div>;
@@ -139,15 +139,16 @@ const ClubNFTStake = () => {
               </div>
               <Web3Button
                 action={(contract) => contract.call("claimRewards")}
-                contractAddress={"0x953012Ec85e65Eef98765066615d85CA5f67aC7D"}
+                contractAddress={stakingContractAddress721}
               >
               <Trans>  Claim Rewards</Trans>
               </Web3Button>
             </div>
           </div>
-
-          <div className="stakedNftsSection">
+<div className="token-card2">
+          <div className="unstakedNftsSection">
             <div>
+              <h1>WORKING MEMBERS</h1>
               <div className="nftRowGrid">
                 {stakedTokens &&
                   stakedTokens[0]?.map((stakedToken, index) => (
@@ -160,25 +161,27 @@ const ClubNFTStake = () => {
             </div>
           </div>
           <div className="unstakedNftsSection" style={{ padding: "20px" }}>
+          <h1>Resting MEMBERS</h1>
             <div className="nftRowGrid">
+              
               {ownedNFTs?.map((nft, index) => (
                 <div key={`ownedNFT-${index}`}>
                     <ThirdwebNftMedia metadata={nft.metadata} />
                   <h3 className="heading text-black dark:text-white">
-                    {getTraitValue(nft.metadata.attributes, "Name")} -{getTraitValue(nft.metadata.attributes,"Family")}
+                    {getTraitValue(nft.metadata.attributes, "Name")} 
                   </h3>
-                  <h3 className="heading text-black dark:text-white">{getTraitValue(nft.metadata.attributes,"Zodiac")}</h3>
                   <Web3Button
-                    contractAddress={"0x953012Ec85e65Eef98765066615d85CA5f67aC7D"}
+                    contractAddress={stakingContractAddress721}
                     action={() => stakeNft(nft.metadata.id)}
                   >
                    <Trans> Send to Work</Trans>
                   </Web3Button>
-                  <div>
-                    <Spacer />
+                  <div> 
                   </div>
+                  
                 </div>
               ))}
+            </div>
             </div>
           </div>
         </>
