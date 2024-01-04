@@ -65,10 +65,10 @@ export default function NFTDetail (   ) {
 
 
     // const { data: directListing, isLoading: loadingDirect } =
-    // useValidDirectListings(marketplace, {
+   //  useValidDirectListings(marketplace, {
     // tokenContract: nftDropContractAddress,
     // tokenId: nft.metadata.id,
-    // });
+   //  });
 
 
 // 2. Load if the NFT is for auction
@@ -139,6 +139,8 @@ export default function NFTDetail (   ) {
    //   }
 
 
+
+
   return (
 
 
@@ -170,7 +172,7 @@ export default function NFTDetail (   ) {
 export const getStaticProps: GetStaticProps = async (context) => {
   const tokenId = context.params?.tokenId as string;
   const sdk = new ThirdwebSDK(NETWORK, {
-    secretKey: process.env.TW_SECRET_KEY,
+    secretKey: process.env.REACT_APP_TEMPLATE_CLIENT_ID,
   });
   const contract = await sdk.getContract(nftDropContractAddress);
   const nft = await contract.erc721.get(tokenId);
