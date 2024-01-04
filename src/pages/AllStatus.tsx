@@ -38,7 +38,9 @@ export default function AllStatus() {
     <div style={{ padding: "50px" }}>
       <Extras />
       <div className="token-card2" style={{ padding: "50px" }}>
-      <h2 className="text-2xl font-bold text-blue-400 ">BULL MEMBERS STATUS</h2>
+        <h2 className="text-2xl font-bold text-blue-400 ">
+          BULL MEMBERS STATUS
+        </h2>
         {!isStatusEventsLoading &&
           statusEvents &&
           statusEvents.map((event, index) => (

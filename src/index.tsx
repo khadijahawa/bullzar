@@ -64,17 +64,12 @@ root.render(
           smartWallet(localWallet(), smartWalletOptions),
           smartWallet(
             embeddedWallet({
-            auth: {
-              options: [
-                "email",
-                "google",
-                "facebook",
-              ]
-
-            }
+              auth: {
+                options: ["email", "google", "facebook"],
+              },
             }),
             smartWalletOptions
-          )
+          ),
         ]}
       >
         <Router>

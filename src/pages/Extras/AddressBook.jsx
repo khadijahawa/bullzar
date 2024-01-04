@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React, { useState, useRef, Suspense} from "react";
-import { suzy, } from "../../assets";
+import React, { useState, useRef, Suspense } from "react";
+import { suzy } from "../../assets";
 import { Trans } from "@lingui/macro";
 import { Map } from "../../components";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Extras, } from '../../components'
+import { Extras } from "../../components";
 
 const Addressbook = () => {
   const ref = useRef();
@@ -14,12 +14,19 @@ const Addressbook = () => {
     setAutoRotate(!autoRotate);
   };
 
-  
   return (
     <div className="container bg-white dark:bg-black">
       <Extras />
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '75vw', height: '50vh' }}>
-      <Canvas
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "75vw",
+          height: "50vh",
+        }}
+      >
+        <Canvas
           shadows
           dpr={[1, 2]}
           camera={{ position: [10, 2, 90], fov: 50 }}
@@ -38,15 +45,13 @@ const Addressbook = () => {
           </Suspense>
           <OrbitControls ref={ref} autoRotate={autoRotate} />
         </Canvas>
-        </div>
-        
+      </div>
 
       <div
         className="token-card4 bg-white dark:bg-black text-black dark:text-white flex flex-col sm:flex-row items-center sm:justify-between p-4 md:p-8 lg:p-12"
         style={{ display: "flex" }}
       >
         <div style={{ flex: 1 }}>
-          
           <p style={{ textAlign: "left", marginLeft: 50, padding: 5 }}>
             BULLS:{" "}
             <a
@@ -75,13 +80,18 @@ const Addressbook = () => {
           />
         </div>
       </div>
-      
-      <div  className="token-card2 bg-white dark:bg-black text-black dark:text-white flex flex-col sm:flex-row items-center sm:justify-between p-4 md:p-8 lg:p-12">         
-<p><Trans>ROYALS</Trans> 👑</p> 
-<p><Trans> CLONED MEMBERS</Trans> 🧟🏻</p>
-<p><Trans> EYE OF RA HOLDER</Trans> ☥🛸</p>
+
+      <div className="token-card2 bg-white dark:bg-black text-black dark:text-white flex flex-col sm:flex-row items-center sm:justify-between p-4 md:p-8 lg:p-12">
+        <p>
+          <Trans>ROYALS</Trans> 👑
+        </p>
+        <p>
+          <Trans> CLONED MEMBERS</Trans> 🧟🏻
+        </p>
+        <p>
+          <Trans> EYE OF RA HOLDER</Trans> ☥🛸
+        </p>
       </div>
-    
     </div>
   );
 };

@@ -11,7 +11,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
 import React, { useState, useEffect } from "react";
 import {  useNavigate, useParams  } from "react-router-dom";
-import { back } from "../../assets"
+import { back } from "../../../assets"
 import { Trans } from "@lingui/macro";
 import styles from "../../../styles/Token.module.css";
 import {
@@ -19,12 +19,12 @@ import {
   MARKETPLACE_ADDRESS,
   NETWORK,
   nftDropContractAddress,
-} from "../../constants/contractAddresses";
+} from "../../../constants/contractAddresses";
 import { Link } from "react-router-dom";
-import randomColor from "../../utils/randomColor";
-import {Skeleton} from "../../components";
+import randomColor from "../../../utils/randomColor";
+import {Skeleton} from "../../../components";
 import toast, { Toaster } from "react-hot-toast";
-import toastStyle from "../../utils/toastConfig";
+import toastStyle from "../../../utils/toastConfig";
 
 
 

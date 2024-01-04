@@ -26,7 +26,7 @@ const CreateNft = () => {
     NFT_COLLECTION_ADDRESS,
     "nft-collection"
   );
-  const [nftName, setNftName] = useState("");
+   const [nftName, setNftName] = useState("");
   const [file, setFile] = useState();
   const fileInputRef = useRef(null);
   const ref = useRef();
@@ -34,7 +34,7 @@ const CreateNft = () => {
   const toggleAutoRotate = () => {
     setAutoRotate(!autoRotate);
   };
-  const [message, setMessage] = useState("");
+   // const [message, setMessage] = useState("");
 
   const mintWithSignature = async () => {
     try {

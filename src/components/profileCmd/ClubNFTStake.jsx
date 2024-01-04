@@ -109,7 +109,7 @@ const ClubNFTStake = () => {
         <>
           <div className="tokenSection">
             <p className="heading text-black dark:text-white">
-             <Trans> Legacy Member NFT Staked generate an annual yield of 835,000
+             <Trans> Legacy Member Worker generate an annual yield of 835,000
               BEARS tokens</Trans>
             </p>
             <div className="tokenGrid">

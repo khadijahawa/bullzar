@@ -6,8 +6,6 @@ import { Box, Extras } from "../../components";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-
-
 const Bridge = () => {
   const ref = useRef();
   const [autoRotate, setAutoRotate] = useState(false); // State to control auto-rotation
@@ -34,7 +32,6 @@ const Bridge = () => {
         >
           <img src={logobsc} style={{ width: "225px", height: "225px" }} />
         </div>
-        
       </div>
       <Extras />
       <div className="token-card1">

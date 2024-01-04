@@ -1,13 +1,12 @@
-import React from 'react'
-import {TreasureHunt} from '../../components'
-
+import React from "react";
+import { TreasureHunt } from "../../components";
 
 const TreasurePlay = () => {
   return (
     <div>
-     <TreasureHunt />
+      <TreasureHunt />
     </div>
-  )
-}
+  );
+};
 
-export default TreasurePlay
+export default TreasurePlay;

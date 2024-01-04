@@ -50,6 +50,7 @@ type DirectFormData = {
 
 
 export default function SaleInfo({ nft }: Props) {
+  
   const navigate = useNavigate();
  // Connect to marketplace contract
  const { contract: marketplace } = useContract(
@@ -165,12 +166,11 @@ return (
           Direct
         </h3>
         <h3
-          className={`${profileStyles.tab} 
-      ${tab === "auction" ? profileStyles.activeTab : ""}`}
-          onClick={() => setTab("auction")}
-        >
-          Auction
-        </h3>
+  className={`${profileStyles.tab} ${tab === "auction" ? profileStyles.activeTab : ""} text-black dark:text-white`}
+  onClick={() => setTab("auction")}
+>
+  Auction
+</h3>
       </div>
 
       {/* Direct listing fields */}
@@ -194,7 +194,7 @@ return (
         />
 
         {/* Input field for auction end date */}
-        <legend className={styles.legend}> Listing Ends on </legend>
+        <legend className="legend text-black dark:text-white "> Listing Ends on </legend>
         <input
           className={styles.input}
           type="datetime-local"
@@ -204,7 +204,7 @@ return (
         <h4 className={styles.formSectionTitle}>Price </h4>
 
         {/* Input field for buyout price */}
-        <legend className={styles.legend}> Price per token</legend>
+        <legend className="legend text-black dark:text-white"> Price per token</legend>
         <input
           className={styles.input}
           type="number"

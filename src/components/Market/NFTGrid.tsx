@@ -5,7 +5,7 @@ import { nftDropContractAddress } from "../../constants/contractAddresses";
 import {Skeleton} from "../../components";
 import {NFTComponent} from "../../components";
 import styles from "../../styles/Buy.module.css";
-
+import { useTheme } from "next-themes";
 
 
 type Props = {
@@ -21,6 +21,9 @@ export default function NFTGrid({
   overrideOnclickBehavior,
   emptyText = "No NFTs found for this collection.",
 }: Props) {
+  const { theme } = useTheme();
+
+  
   return (
     <div className={styles.nftGridContainer}>
       {isLoading ? (
