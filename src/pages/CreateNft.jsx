@@ -3,7 +3,7 @@ import {
   useAddress,
   useContract,
   Web3Button,
-  useStorageUpload
+  useStorageUpload, useNFTs,
 } from "@thirdweb-dev/react";
 import styles from "../styles/Theme.module.css";
 import { Link } from "react-router-dom";
@@ -14,9 +14,48 @@ import { Trans } from "@lingui/macro";
 import { Button } from "react-bootstrap";
 import { profile2 } from "../assets";
 
+
 const NFT_COLLECTION_ADDRESS = "0xFCe8AB8881eEaF81803fB9669cC2d6F4750d5657";
 
 // need fix //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const CreateNft = () => {
@@ -34,30 +73,28 @@ const CreateNft = () => {
   const toggleAutoRotate = () => {
     setAutoRotate(!autoRotate);
   };
-   // const [message, setMessage] = useState("");
+ const [message, setMessage] = useState("");
+ const { data: nfts, isLoading: loadingNfts } = useNFTs(nftCollection);
+
+
+// Function to store file in state when the user uploads it
+const uploadFile = () => {
+  if (fileInputRef?.current) {
+    fileInputRef.current.click();
+
+    fileInputRef.current.onchange = () => {
+      if (fileInputRef?.current?.files?.length) {
+        const file = fileInputRef.current.files[0];
+        setFile(file);
+      }
+    };
+  }
+};
+
+
 
   const mintWithSignature = async () => {
     try {
-     //  Make a request to /api/server
-
-     // const testFetch = async () => {
-     // try {
-      // const response = await fetch("/api/test");
-       // console.log(response);
-        //  if (response.status) {
-        //  const data = await response.json();
-        // console.log("Response from API:", data);
-        //  } else {
-       //     console.error("Error:", response.status, response.statusText);
-        //   }
-      // } catch (error) {
-       //   console.error("Fetch error:", error);
-       //}
-      //};
-
-     // Call the function to initiate the fetch request
-     // testFetch();
-
       const signedPayloadReq = await fetch(`/API/server`, {
         method: "POST",
         body: JSON.stringify({
@@ -74,6 +111,8 @@ const CreateNft = () => {
         alert(json.error);
         return;
       }
+
+
 
       // Extract the file from the response or use the existing file state
       const fileToUpload = json.signedPayload.image || file;
@@ -105,19 +144,14 @@ const CreateNft = () => {
 
 
 
-  // Function to store file in state when the user uploads it
-  const uploadFile = () => {
-    if (fileInputRef?.current) {
-      fileInputRef.current.click();
 
-      fileInputRef.current.onchange = () => {
-        if (fileInputRef?.current?.files?.length) {
-          const file = fileInputRef.current.files[0];
-          setFile(file);
-        }
-      };
-    }
-  };
+
+
+  
+
+
+
+
   //fix market - friends page//
 
 

@@ -99,7 +99,7 @@ const OwnedNFT = () => {
     <div>
       <div>
         <h1 className="text-4xl font-bold text-blue-500 text-center">
-        <Trans>BASE NFTs</Trans> 
+        <Trans>---------------</Trans> 
         </h1>
       </div>
       
@@ -110,7 +110,7 @@ const OwnedNFT = () => {
           {Prods.length > 0 ? (
             Prods.map((nft) => <Card key={nft.id} nft={nft} />)
           ) : (
-            <p><Trans>No NFTs found. Mint an NFT</Trans> </p>
+            <p><Trans>No NFTs found. Mint or buy an NFT</Trans> </p>
           )}
         </div>
       ) : (

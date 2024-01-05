@@ -19,7 +19,7 @@ const Profile = () => {
       <UserStatus />
       <ClubNFTStake />
       <MyCampaigns />
-      <OwnedNFT />
+     
     </div>
   );
 };

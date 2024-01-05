@@ -12,13 +12,14 @@ import {
   MiningContractAddress1155,
   Worker1155,
 } from "../../../constants/contractAddresses";
-import { mando, back } from "../../../assets";
+import { mando, back, os, logo3, logo11 } from "../../../assets";
 import { Trans } from "@lingui/macro";
 import { Container } from "react-bootstrap";
 import { useNavigate} from "react-router-dom";
-
+import { useTheme } from "next-themes";
 
 export default function TreasureHunt () {
+  const { theme } = useTheme();
   const address = useAddress();
   const navigate = useNavigate();
   const { contract: miningContract } = useContract(MiningContractAddress1155);
@@ -41,6 +42,7 @@ export default function TreasureHunt () {
   }
 
   return (
+    
     <div>
 <Container>
     <section className="token-card1 bg-white dark:bg-black flex flex-col sm:flex-row items-center sm:justify-between p-4 md:p-8 lg:p-12">
@@ -145,6 +147,18 @@ export default function TreasureHunt () {
             }}>
       <Shop pickaxeContract={pickaxeContract} />
       </div>
+      <div style={{ display: 'flex' }}>
+    <a href='https://opensea.io/collection/bull-wokers-1' target='_blank' rel="noreferrer">
+        <img src={os} width="90" height="90" alt="opensea" />
+    </a>
+    <a href="https://bullmart.bullsclub.space" target="_blank" rel="noreferrer">
+        {theme === "light" ? (
+            <img src={logo3} width="100" height="100" alt="bull logo2" />
+        ) : (
+            <img src={logo11} width="100" height="100" alt="bull logo" />
+        )}
+    </a>
+</div>
       </>
       ):(
         <LoadingSection />

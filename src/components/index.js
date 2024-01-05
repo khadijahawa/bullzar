@@ -79,12 +79,15 @@ export { default as Memberminter } from "./NFTPage/Memberminter";
 export { default as OtherChainNFT } from "./NFTPage/OtherChainNFT";
 
 
+
 //wallet//
 export { default as Transfer } from "./Wallet/Transfer";
 export { default as TransferBear } from "./Wallet/TransferBEAR";
 export { default as Stke } from "./Wallet/Stke";
 export { default as Exchange } from "./Wallet/Exchange";
 export { default as Coin } from "./Wallet/Coin";
+
+
 
  //profile//
  export { default as Advice } from "./profileCmd/Advice";
@@ -96,6 +99,8 @@ export { default as Coin } from "./Wallet/Coin";
  export { default as ClubNFTStake } from "./profileCmd/ClubNFTStake";
 
 
+
+
  //market//
  export { default as NFTComponent } from "./Market/NFT721";
  export { default as NFTGrid } from "./Market/NFTGrid";
@@ -104,5 +109,6 @@ export { default as Coin } from "./Wallet/Coin";
 
 
 
+ export { default as IDTest } from "./Market/IDTest";
 
 //friends//

@@ -41,7 +41,7 @@ const [randomColor1, randomColor2] = [randomColor(), randomColor()];
 
 
 
-export default function NFTDetail (   ) {
+export default function NFTDetail (           ) {
 
 
 
@@ -64,61 +64,61 @@ export default function NFTDetail (   ) {
 
 
 
-    // const { data: directListing, isLoading: loadingDirect } =
-   //  useValidDirectListings(marketplace, {
-    // tokenContract: nftDropContractAddress,
-    // tokenId: nft.metadata.id,
-   //  });
+  // const { data: directListing, isLoading: loadingDirect } =
+ // useValidDirectListings(marketplace, {
+  //  tokenContract: nftDropContractAddress,
+  // tokenId: nft.metadata.id,
+  // });
 
 
-// 2. Load if the NFT is for auction
-    // const { data: auctionListing, isLoading: loadingAuction } =
-    // useValidEnglishAuctions(marketplace, {
-    // tokenContract: nftDropContractAddress  ,
-    // tokenId: nft.metadata.id,
-    //  });
-
-// Load historical transfer events: TODO - more event types like sale
-    // const { data: transferEvents, isLoading: loadingTransferEvents } =
-    // useContractEvents(nftCollection, "Transfer", {
-    // queryFilter: {
-    // filters: {
-    //  tokenId: nft.metadata.id,
-    //  },
-    // order: "desc",
-    // },
-    //   });
+ 
+ // const { data: auctionListing, isLoading: loadingAuction } =
+  //  useValidEnglishAuctions(marketplace, {
+  //   tokenContract: nftDropContractAddress  ,
+   //  tokenId: nft.metadata.id,
+  //  });
 
 
+   // const { data: transferEvents, isLoading: loadingTransferEvents } =
+   //  useContractEvents(nftCollection, "Transfer", {
+  // queryFilter: {
+  //   filters: {
+   //  tokenId: nft.metadata.id,
+  //    },
+  //   order: "desc",
+   //  },
+  //  });
 
-   // async function createBidOrOffer() {
-   //  let txResult;
-   //  if (!bidValue) {
+
+
+    //    async function createBidOrOffer() {
+   //    let txResult;
+   //    if (!bidValue) {
    //    toast(`Please enter a bid value`, {
-   //     icon: "❌",
-   //     style: toastStyle,
-   //     position: "bottom-center",
-   //   });
-   //   return;
+    //    icon: "❌",
+    //    style: toastStyle,
+    //    position: "bottom-center",
+    //  });
+    //  return;
    // }
   
    // if (auctionListing?.[0]) {
    //  txResult = await marketplace?.englishAuctions.makeBid(
    //    auctionListing[0].id,
    //   bidValue
-   //  );
+  //  );
    //  } else if (directListing?.[0]) {
-   //    txResult = await marketplace?.offers.makeOffer({
-   //     assetContractAddress: NFT_COLLECTION_ADDRESS,
-   //     tokenId: nft.metadata.id,
-   //    totalPrice: bidValue,
+    //   txResult = await marketplace?.offers.makeOffer({
+    //   assetContractAddress: nftDropContractAddress,
+    //    tokenId: nft.metadata.id,
+    //  totalPrice: bidValue,
    //  });
    // } else {
    //   throw new Error("No valid listing found for this NFT");
    // }
   
    //  return txResult;
-   // }
+  //  }
   
    //  async function buyListing() {
    //    let txResult;
