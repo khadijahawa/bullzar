@@ -1,6 +1,11 @@
+
+
+
+
 const { ThirdwebSDK } = require("@thirdweb-dev/sdk");
 const animalNames = require("../utils/BullFriends");
 const { CreateNFT } = require("../constants/contractAddresses");
+
 
 module.exports = async function generateMintSignature(req, res) {
   try {

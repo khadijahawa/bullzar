@@ -4,7 +4,7 @@ import { DisplayCampaigns } from "../../components";
 import contractABI from "../../API/CrowdFunding.json";
 import {createcampaginsContract} from "../../constants/contractAddresses"
 import { Trans } from "@lingui/macro";
-
+import { Link } from "react-router-dom";
 
 
 const HomeCampaings = () => {
@@ -76,6 +76,9 @@ const HomeCampaings = () => {
           <p className="text-center text-gray-500"></p>
         )}
       </section>
+      <Link to="/Campagins" className="block px-2 py-2 text-right text-white bg-yellow-49 rounded-md">
+        {" "} All Campaigns 
+        </Link>
       </div>
     </div>
   );

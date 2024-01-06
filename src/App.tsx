@@ -44,8 +44,11 @@ const App = () => {
        
        <Route path="/NFTDetail/:id" 
        element={<NFTDetail />} />
+       
+       
+       
        <Route path="/CampaignDetails/:title" 
-       element={<CampaignDetails />} />
+        element={<CampaignDetails />} />
 
        
 

@@ -2,11 +2,10 @@ import React, { useState, useRef, Suspense } from "react";
 import { Extras, Arena } from "../../../components";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { os, logo3, logo11 } from "../../../assets";
-import { useTheme } from "next-themes";
+
 
 const Friends = () => {
-  const { theme } = useTheme();
+
   const ref = useRef();
   const [autoRotate, setAutoRotate] = useState(false); // Initial state is set to false
 

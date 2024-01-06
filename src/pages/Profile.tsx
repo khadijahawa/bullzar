@@ -6,7 +6,6 @@ import {
   TreasurePass,
   Extras2,
   MyCampaigns,
-  OwnedNFT,
 } from "../components";
 
 const Profile = () => {
@@ -19,7 +18,6 @@ const Profile = () => {
       <UserStatus />
       <ClubNFTStake />
       <MyCampaigns />
-     
     </div>
   );
 };

@@ -20,6 +20,7 @@
     "axios": "^1.6.3",
     "browserify-zlib": "latest",
     "ethers": "^5",
+    "formidable": "^3.5.1",
     "http": "npm:http-browserify",
     "http-browserify": "latest",
     "https": "npm:https-browserify",
@@ -63,8 +64,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"
-
-    
   },
   "eslintConfig": {
     "extends": [
