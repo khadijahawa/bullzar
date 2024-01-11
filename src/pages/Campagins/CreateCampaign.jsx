@@ -58,7 +58,7 @@ const CreateCampain = () => {
         setIsLoading(true);
         try {
           if (typeof window.ethereum !== "undefined") {
-            const data = await createCampaign([
+            const data = await CreateCampaign([
               form.title, // title
               form.description, // description
               ethers.utils.parseUnits(form.target, 18),
