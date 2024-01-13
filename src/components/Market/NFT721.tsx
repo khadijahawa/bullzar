@@ -22,7 +22,6 @@ export default function NFTComponent({ nft }: Props) {
     MARKETPLACE_ADDRESS,
     "marketplace-v3"
   );
-
   // 1. Load if the NFT is for direct listing
   const { data: directListing, isLoading: loadingDirect } =
     useValidDirectListings(marketplace, {

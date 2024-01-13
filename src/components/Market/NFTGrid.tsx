@@ -1,5 +1,6 @@
 import type { NFT as NFTType } from "@thirdweb-dev/sdk";
 import { Link } from "react-router-dom";
+// import Link from "next/link";
 import React from "react";
 import { nftDropContractAddress } from "../../constants/contractAddresses";
 import { Skeleton } from "../../components";
@@ -35,7 +36,7 @@ export default function NFTGrid({
           !overrideOnclickBehavior ? (
             <Link
               // to={`/NFTDetail/${nft.metadata.id}`}
-              to={`/NFTDetail/${nftDropContractAddress}/${nft.metadata.id}`}
+              to={`/NFTDetails/${nft.metadata.id}`}
               key={nft.metadata.id}
               className={styles.nftContainer}
             >
