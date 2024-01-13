@@ -18,6 +18,8 @@ import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../utils/toastConfig";
 import { Container } from "../components";
 import styles from "../styles/Token.module.css";
+import { Button } from "@chakra-ui/react";
+
 
 import {
   ETHERSCAN_URL,
@@ -25,6 +27,9 @@ import {
   NETWORK,
   nftDropContractAddress,
 } from "../constants/contractAddresses";
+
+
+
 
 const [randomColor1, randomColor2] = [randomColor(), randomColor()];
 
@@ -36,6 +41,15 @@ function NFTDetails() {
   const [contractMetadata, setContractMetaData] = useState(null);
   const [loading, setLoading] = useState(true); // Added loading state
 
+
+  const getTraitValue = (traitType) => {
+    console.log("nft.metadata.attributes:", nft?.metadata?.attributes);
+    return nft?.metadata?.attributes?.[traitType] || "";
+  };
+  
+
+
+  
   // Connect to marketplace smart contract
   const { contract: marketplace, isLoading: loadingContract } = useContract(
     MARKETPLACE_ADDRESS,
@@ -150,9 +164,17 @@ function NFTDetails() {
         <p>Loading...</p>
       ) : (
         <>
+
           <Toaster position="bottom-center" reverseOrder={false} />
           <Container maxWidth="lg">
+          <Link className="transfer-button2" to="/Market">
+   <Button>
+     ALL MEMBERS
+   </Button>
+ </Link>
+
             <div className={styles.container}>
+              
               <div className={styles.metadataContainer}>
                 <ThirdwebNftMedia
                   metadata={nft?.metadata}
@@ -168,29 +190,41 @@ function NFTDetails() {
                   <h3 className={styles.descriptionTitle}>Traits</h3>
 
                   <div className={styles.traitsContainer}>
-                    {Object.entries(nft?.metadata?.attributes || {}).map(
-                      ([key, value]) => (
-                        <div className={styles.traitContainer} key={key}>
-                          <p className={styles.traitName}>{key}</p>
-                          <p className={styles.traitValue}>
-                            {value?.toString() || ""}
-                          </p>
-                        </div>
-                      )
-                    )}
-                  </div>
+  <div className={styles.traitContainer}>
+    <p className="traitName heading text-black dark:text-white">Name</p>
+    <p className={styles.traitValue}>{getTraitValue("Name")}</p>
+  </div>
+  <div className={styles.traitContainer}>
+    <p className="traitName heading text-black dark:text-white">Family</p>
+    <p className={styles.traitValue}>{getTraitValue("Family")}</p>
+  </div>
+  <div className={styles.traitContainer}>
+    <p className="traitName heading text-black dark:text-white">Zodiac</p>
+    <p className={styles.traitValue}>{getTraitValue("Zodiac")}</p>
+  </div>
+  <div className={styles.traitContainer}>
+    <p className="traitName heading text-black dark:text-white">Lucky Token</p>
+    <p className={styles.traitValue}>{getTraitValue("Crypto")}</p>
+  </div>
+ 
+</div>
+
+
 
                   <h3 className={styles.descriptionTitle}>History</h3>
 
                   <div className={styles.traitsContainer}>
-                    {transferEvents?.map((event, index) => (
+                  {[
+
+    ...transferEvents?.slice(-3),   // Take the last 4 events
+  ].map((event, index) => (
                       <div
                         key={event.transaction.transactionHash}
                         className={styles.eventsContainer}
                       >
                         <div className={styles.eventContainer}>
-                          <p className={styles.traitName}>Event</p>
-                          <p className={styles.traitValue}>
+                          <p className="traitName heading text-black dark:text-white">Event</p>
+                          <p className="traitValue heading text-black dark:text-white">
                             {
                               // if last event in array, then it's a mint
                               index === transferEvents.length - 1
@@ -201,16 +235,16 @@ function NFTDetails() {
                         </div>
 
                         <div className={styles.eventContainer}>
-                          <p className={styles.traitName}>From</p>
-                          <p className={styles.traitValue}>
+                          <p className="traitName heading text-black dark:text-white">From</p>
+                          <p className="traitValue heading text-black dark:text-white">
                             {event.data.from?.slice(0, 4)}...
                             {event.data.from?.slice(-2)}
                           </p>
                         </div>
 
                         <div className={styles.eventContainer}>
-                          <p className={styles.traitName}>To</p>
-                          <p className={styles.traitValue}>
+                          <p className="traitName heading text-black dark:text-white">To</p>
+                          <p className="traitValue heading text-black dark:text-white">
                             {event?.data?.to?.slice(0, 4)}...
                             {event?.data?.to?.slice(-2)}
                           </p>
@@ -234,23 +268,22 @@ function NFTDetails() {
               <div className={styles.listingContainer}>
                 {contractMetadata && (
                   <div className={styles.contractMetadataContainer}>
-                    <MediaRenderer
-                      src={contractMetadata?.image}
-                      className={styles.collectionImage}
-                    />
+                    
                     <p className={styles.collectionName}>
                       {contractMetadata?.name}
                     </p>
                   </div>
                 )}
+                
                 <h1 className={styles.title}>{nft?.metadata?.name}</h1>
+
+                <h3 className="heading text-black dark:text-white">{getTraitValue("Name")}</h3>
                 <p className={styles.collectionName}>
                   Token ID #{nft?.metadata?.id}
                 </p>
 
-                <Link
-                  to={`/profile/${nft?.owner}`}
-                  className={styles.nftOwnerContainer}
+               
+                <div  className={styles.nftOwnerContainer}
                 >
                   {/* Random linear gradient circle shape */}
                   <div
@@ -260,18 +293,18 @@ function NFTDetails() {
                     }}
                   />
                   <div className={styles.nftOwnerInfo}>
-                    <p className={styles.label}>Current Owner</p>
-                    <p className={styles.nftOwnerAddress}>
+                    <p className="label heading text-black dark:text-white">Current Owner</p>
+                    <p className="nftOwnerAddress heading text-black dark:text-white"  >
                       {nft?.owner?.slice(0, 8)}...{nft?.owner?.slice(-4)}
                     </p>
                   </div>
-                </Link>
+                  </div>
 
                 <div className={styles.pricingContainer}>
                   {/* Pricing information */}
                   <div className={styles.pricingInfo}>
-                    <p className={styles.label}>Price</p>
-                    <div className={styles.pricingValue}>
+                    <p className="label heading text-black dark:text-white">Price</p>
+                    <div className="pricingValue heading text-black dark:text-white">
                       {loadingContract || loadingDirect || loadingAuction ? (
                         <Skeleton width="120" height="24" />
                       ) : (

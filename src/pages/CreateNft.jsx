@@ -185,16 +185,12 @@ const uploadFile = () => {
             {/* Form Section */}
             <h1>Q4-2024</h1>
             <h1 className="text-2xl font-bold text-blue-500 text-center">
-              <Trans> Create BULL Friend</Trans>
+              <Trans> MINT BULL Friend</Trans>
             </h1>
 
-            <p>
-              <Trans> Hint: We only have Friends with cool</Trans>{" "}
-              <b>
-                <Trans>animal or fruit name  </Trans>
-              </b>
+           
               ! 🐶🐨🍇🐓🍌🍐🍎🐰🦝🍋🍊🦁🐵🐧
-            </p>
+            
             {file ? (
               <img
                 src={URL.createObjectURL(file)} alt="Bull Friend"

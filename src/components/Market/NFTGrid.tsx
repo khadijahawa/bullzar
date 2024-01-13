@@ -35,7 +35,7 @@ export default function NFTGrid({
         data.map((nft) =>
           !overrideOnclickBehavior ? (
             <Link
-              // to={`/NFTDetail/${nft.metadata.id}`}
+             
               to={`/NFTDetails/${nft.metadata.id}`}
               key={nft.metadata.id}
               className={styles.nftContainer}

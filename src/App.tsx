@@ -55,11 +55,13 @@ const App = () => {
               <Route path="/Sell" element={<Sell />} />
               <Route path="/TreasurePlay" element={<TreasurePlay />} />
 
-              {/* <Route
-                path="/NFTDetail/:contractAddress/:tokenId"
-                element={<NFTDetail/>}
-              /> */}
+              <Route path="/CampaignDetails/:title" 
+               element={<CampaignDetails />} />
+              
               <Route path="/NFTDetails/:id" element={<NFTDetails />} />
+           
+           
+           
             </Routes>
           </div>
         </div>

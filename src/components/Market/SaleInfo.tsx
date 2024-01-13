@@ -228,8 +228,9 @@ export default function SaleInfo({ nft }: Props) {
                 style: toastStyle,
                 position: "bottom-center",
               });
+
               navigate(
-                `/NFTDetail/${nftDropContractAddress}/${nft.metadata.id}`
+                `/NFTDetails/${nft.metadata.id}`
               );
             }}
           >
@@ -304,7 +305,7 @@ export default function SaleInfo({ nft }: Props) {
                 position: "bottom-center",
               });
               navigate(
-                `/NFTDetail/${nftDropContractAddress}/${nft.metadata.id}`
+                `/NFTDetails/${nft.metadata.id}`
               );
             }}
           >
