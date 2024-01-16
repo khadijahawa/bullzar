@@ -9,6 +9,8 @@ import contractABI from "../../API/CrowdFunding.json";
 import { createcampaginsContract } from "../../constants/contractAddresses";
 import { Trans } from "@lingui/macro";
 import { Link } from "react-router-dom";
+import { Web3Button } from "@thirdweb-dev/react";
+
 
 const CreateCampaign = async (args) => {
   const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -66,14 +68,14 @@ const CreateCampain = () => {
               form.image,
             ]);
             console.log("contract call success", data);
-            navigate("/AllCampaigns");
+            navigate("/Campaigns");
           } else {
             console.error(
               "MetaMask (or another Ethereum wallet) is not installed."
             );
           }
         } catch (error) {
-          console.error("Contract call error:", error);
+         
           setIsLoading(false);
           // Handle the error gracefully, e.g., show an error message to the user
           alert("Failed to create campaign. Please try again."); // Show an error message to the user
@@ -152,12 +154,26 @@ const CreateCampain = () => {
         />
 
         <div className="flex justify-center items-center mt-[40px]">
-          <button
-            type="submit"
-            className="bg-[#38cf2d] text-white py-2 px-4 rounded-md cursor-pointer"
-          >
-            <Trans> Post your Campaign </Trans>
-          </button>
+         
+         
+        <Web3Button
+  contractAddress="0xa167AB1526B7792dbAFfA4b137E4b5cB455FC99B"
+  action={(contract) => {
+    contract.call("createCampaign", [
+      form.title,
+      form.description,
+      ethers.utils.parseUnits(form.target, 18),
+      new Date(form.deadline).getTime(),
+      form.image,
+    ]);
+  }}
+>
+  Create
+</Web3Button>
+       
+       
+       
+       
         </div>
 
         <div className="w-full flex justify-start items-center p-4 bg-[#291182] dark:bg-[#7e6eba] h-[120px] rounded-[10px]">
@@ -172,6 +188,19 @@ const CreateCampain = () => {
             </h4>
           </div>
         </div>
+        <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
+                <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">
+                  <Trans>Support ! </Trans>
+                </h4>
+                <a
+                  href="mailto:support@bullsclub.space"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  @📬📦📮📧 support@bullsclub.space
+                </a>
+              
         <Link
           to="/Campagins"
           className="block px-6 py-2 text-center text-white bg-blue-600 rounded-md"
@@ -179,8 +208,9 @@ const CreateCampain = () => {
           {" "}
           ALL Campaigns
         </Link>
+        </div>
         <p className="font-epilogue font-bold text-[18px] text-black dark:text-white ml-[20px]">
-          Free for limited time, Just pay network Fee
+          Free creation for All, limited time. Members only Access to create @Q4-24
         </p>
       </form>
     </div>

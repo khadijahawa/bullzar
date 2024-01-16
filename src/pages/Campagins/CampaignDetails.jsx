@@ -17,7 +17,7 @@ import {
   email,
   twitter,
 } from "../../assets";
-import { useAddress, useContract, useContractWrite } from "@thirdweb-dev/react";
+import { useAddress, useContract, useContractWrite, Web3Button } from "@thirdweb-dev/react";
 import { Button } from "react-bootstrap";
 import contractABI from "../../API/CrowdFunding.json";
 import { Trans } from "@lingui/macro";
@@ -99,6 +99,9 @@ const CampaignDetails = () => {
   const [donators, setDonators] = useState([]);
   const remainingDays = daysLeft(state.deadline);
 
+
+
+
   useEffect(() => {
     const fetchData = async () => {
       if (isReady && contract) {
@@ -146,6 +149,9 @@ const CampaignDetails = () => {
     }
   };
 
+
+
+
   const handleDonateETH = async () => {
     setIsLoading(true);
     try {
@@ -164,6 +170,9 @@ const CampaignDetails = () => {
       setIsLoading(false);
     }
   };
+
+
+
 
   const handleDonateBull = async () => {
     setIsLoading(true);
@@ -334,6 +343,7 @@ const CampaignDetails = () => {
               </div>
 
               <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
+                <p>donation didnt go through?</p>
                 <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">
                   <Trans> Need Support ! </Trans>
                 </h4>
