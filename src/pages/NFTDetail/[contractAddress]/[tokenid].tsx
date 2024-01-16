@@ -359,6 +359,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const sdk = new ThirdwebSDK(NETWORK, {
     secretKey: process.env.TW_SECRET_KEY,
   });
+  
   const contract = await sdk.getContract(nftDropContractAddress);
   const nft = await contract.erc721.get(tokenId);
   let contractMetadata;

@@ -30,11 +30,10 @@ const [randomColor1, randomColor2] = [randomColor(), randomColor()];
 
 function NFTDetails() {
   const { id } = useParams();
-  //   const { tokenId } = useParams();
   const [bidValue, setBidValue] = useState();
   const [nft, setNft] = useState(null);
   const [contractMetadata, setContractMetaData] = useState(null);
-  const [loading, setLoading] = useState(true); // Added loading state
+  const [loading, setLoading] = useState(true);
 
   // Connect to marketplace smart contract
   const { contract: marketplace, isLoading: loadingContract } = useContract(
@@ -43,13 +42,8 @@ function NFTDetails() {
   );
 
   const { contract: nftCollection } = useContract(nftDropContractAddress);
-  //   const sdk = new ThirdwebSDK(NETWORK, {
-  //     secretKey: process.env.TW_SECRET_KEY,
-  //   });
-  //   console.log("sdk", sdk);
 
   useEffect(() => {
-    // Fetch NFT data based on contractAddress and tokenId
     const fetchNFTData = async () => {
       try {
         const sdk = new ThirdwebSDK(NETWORK, {
@@ -69,7 +63,7 @@ function NFTDetails() {
       }
     };
 
-    setLoading(true); // Set loading to true when starting to fetch data
+    setLoading(true);
     fetchNFTData();
   }, [id]);
 
@@ -77,20 +71,24 @@ function NFTDetails() {
   const { data: directListing, isLoading: loadingDirect } =
     useValidDirectListings(marketplace, {
       tokenContract: nftDropContractAddress,
-      id: nft?.metadata?.id,
+      tokenId: nft?.metadata?.id,
     });
+
+  // console.log("directListing", directListing);
 
   const { data: auctionListing, isLoading: loadingAuction } =
     useValidEnglishAuctions(marketplace, {
       tokenContract: nftDropContractAddress,
-      id: nft?.metadata?.id,
+      tokenId: nft?.metadata?.id,
     });
+
+  // console.log("auctionListing", auctionListing);
 
   const { data: transferEvents, isLoading: loadingTransferEvents } =
     useContractEvents(nftCollection, "Transfer", {
       queryFilter: {
         filters: {
-          id: nft?.metadata?.id,
+          tokenId: nft?.metadata?.id,
         },
         order: "desc",
       },
@@ -144,7 +142,6 @@ function NFTDetails() {
   }
 
   return (
-    // <div>hey</div>
     <>
       {loading ? (
         <p>Loading...</p>
@@ -171,9 +168,9 @@ function NFTDetails() {
                     {Object.entries(nft?.metadata?.attributes || {}).map(
                       ([key, value]) => (
                         <div className={styles.traitContainer} key={key}>
-                          <p className={styles.traitName}>{key}</p>
+                          <p className={styles.traitName}>{value.trait_type}</p>
                           <p className={styles.traitValue}>
-                            {value?.toString() || ""}
+                            {value?.value.toString() || ""}
                           </p>
                         </div>
                       )

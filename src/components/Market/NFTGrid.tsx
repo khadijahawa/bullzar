@@ -22,7 +22,7 @@ export default function NFTGrid({
   emptyText = "No NFTs found for this collection.",
 }: Props) {
   const { theme } = useTheme();
-
+  console.log("all data", data);
   return (
     <div className={styles.nftGridContainer}>
       {isLoading ? (
