@@ -18,6 +18,8 @@ import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../utils/toastConfig";
 import { Container } from "../components";
 import styles from "../styles/Token.module.css";
+import { Button } from "@chakra-ui/react";
+import { Trans } from "@lingui/macro";
 
 import {
   ETHERSCAN_URL,
@@ -148,6 +150,11 @@ function NFTDetails() {
       ) : (
         <>
           <Toaster position="bottom-center" reverseOrder={false} />
+          <Link className="transfer-button2" to="/Market">
+   <Button>
+     <Trans>MEMBERS</Trans>
+   </Button>
+ </Link>
           <Container maxWidth="lg">
             <div className={styles.container}>
               <div className={styles.metadataContainer}>
@@ -180,7 +187,10 @@ function NFTDetails() {
                   <h3 className={styles.descriptionTitle}>History</h3>
 
                   <div className={styles.traitsContainer}>
-                    {transferEvents?.map((event, index) => (
+                  {[
+    ...transferEvents?.slice(0, 1), // Take the first event
+    ...transferEvents?.slice(-2),   // Take the last 4 events
+  ].map((event, index) => (
                       <div
                         key={event.transaction.transactionHash}
                         className={styles.eventsContainer}
@@ -231,10 +241,7 @@ function NFTDetails() {
               <div className={styles.listingContainer}>
                 {contractMetadata && (
                   <div className={styles.contractMetadataContainer}>
-                    <MediaRenderer
-                      src={contractMetadata?.image}
-                      className={styles.collectionImage}
-                    />
+                    
                     <p className={styles.collectionName}>
                       {contractMetadata?.name}
                     </p>
@@ -242,11 +249,10 @@ function NFTDetails() {
                 )}
                 <h1 className={styles.title}>{nft?.metadata?.name}</h1>
                 <p className={styles.collectionName}>
-                  Token ID #{nft?.metadata?.id}
+                  ID #{nft?.metadata?.id}
                 </p>
 
-                <Link
-                  to={`/profile/${nft?.owner}`}
+                <div
                   className={styles.nftOwnerContainer}
                 >
                   {/* Random linear gradient circle shape */}
@@ -262,7 +268,7 @@ function NFTDetails() {
                       {nft?.owner?.slice(0, 8)}...{nft?.owner?.slice(-4)}
                     </p>
                   </div>
-                </Link>
+                </div>
 
                 <div className={styles.pricingContainer}>
                   {/* Pricing information */}

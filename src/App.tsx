@@ -21,7 +21,7 @@ import {
   CreateNft,
   Friends,
   Sell,
-  TreasurePlay,
+  TreasurePlay, ClubMarket,
   NFTDetail,
 } from "./pages/Index";
 import NFTDetails from "./components/NFTDetails";
@@ -47,11 +47,14 @@ const App = () => {
               <Route path="/BearWallet" element={<BearWallet />} />
               <Route path="/NFT" element={<NFT />} />
               <Route path="/Market" element={<Market />} />
+              <Route path="/Market" element={<Market />} />
+              <Route path="/ClubMarket" element={<ClubMarket />} />
+
               <Route path="/BullFlip" element={<BullFlip />} />
               <Route path="/CreateCampaign" element={<CreateCampaign />} />
               <Route path="/AllStatus" element={<AllStatus />} />
               <Route path="/CreateNft" element={<CreateNft />} />
-              <Route path="/Friends" element={<Friends />} />
+              <Route path="/BULLTOWN" element={<Friends />} />
               <Route path="/Sell" element={<Sell />} />
               <Route path="/TreasurePlay" element={<TreasurePlay />} />
 
