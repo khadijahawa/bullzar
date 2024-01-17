@@ -342,7 +342,7 @@ export default function NFTDetail({ nft, contractMetadata }: Props) {
                     });
                   }}
                 >
-                  Place bid
+                  {/* Place bid */}
                 </Web3Button>
               </>
             )}
@@ -359,7 +359,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const sdk = new ThirdwebSDK(NETWORK, {
     secretKey: process.env.TW_SECRET_KEY,
   });
-  
+
   const contract = await sdk.getContract(nftDropContractAddress);
   const nft = await contract.erc721.get(tokenId);
   let contractMetadata;
