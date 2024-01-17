@@ -58,6 +58,12 @@ export default function Sell() {
      <Trans>MEMBERS</Trans>
    </Button>
  </Link>
+ <Link className="transfer-button2" to="/BULLTOWN">
+   <Button>
+     <Trans>BULLTOWN /2025</Trans>
+   </Button>
+ </Link>
+
  <Link to="/Profile" >
    <img src={profile2} alt="address" />
  </Link>

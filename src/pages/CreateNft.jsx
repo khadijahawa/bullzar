@@ -166,9 +166,9 @@ const uploadFile = () => {
             <Trans> Friends</Trans>
           </Button>
         </Link>
-        <Link className="transfer-button2" to="/Market">
+        <Link className="transfer-button2" to="/BULLTOWN">
            <Button style={{ marginRight: "20px" }}>
-             <Trans>Members</Trans>
+             <Trans>BULLTOWN</Trans>
            </Button>
          </Link>
  <Link to="/Profile" >

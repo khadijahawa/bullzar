@@ -14,6 +14,8 @@ export { default as CreateNft } from "./CreateNft";
 export { default as Friends } from "./Market/Friends/Friends";
 export { default as Sell } from "./Market/Members/Sell";
 export { default as Market } from "./Market/Members/Market";
+export { default as ClubMarket } from "./Market/ClubMarket";
+
 //fund//
 export { default as CampaignDetails } from "./Campagins/CampaignDetails";
 export { default as Campagins } from "./Campagins/Campagins";

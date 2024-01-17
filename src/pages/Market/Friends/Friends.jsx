@@ -1,5 +1,5 @@
 import React, { useState, useRef, Suspense } from "react";
-import { Extras, Arena } from "../../../components";
+import { Extras, Town } from "../../../components";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
@@ -36,7 +36,7 @@ const Friends = () => {
         >
           <Suspense fallback={null}>
             <Stage controls={ref} preset="rembrandt" intensity={1} environment="city">
-              <Arena />
+              <Town />
             </Stage>
           </Suspense>
           <OrbitControls ref={ref} autoRotate={autoRotate} />

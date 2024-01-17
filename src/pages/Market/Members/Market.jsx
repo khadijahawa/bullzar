@@ -19,7 +19,11 @@ export default function Market() {
             <Trans>SELL</Trans>
           </Button>
         </Link>
-
+        <Link className="transfer-button2" to="/ClubMarket">
+   <Button>
+     <Trans>Market</Trans>
+   </Button>
+ </Link>
         <h1 style={{ padding: 10 }}> Browse BULLSCLUB Legacy MEMBERS</h1>
         <NFTGrid
           data={data}
