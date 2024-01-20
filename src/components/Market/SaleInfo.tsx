@@ -148,13 +148,13 @@ export default function SaleInfo({ nft }: Props) {
       <Toaster position="bottom-center" reverseOrder={false} />
       <div className={styles.saleInfoContainer} style={{ marginTop: -42 }}>
         <div className={profileStyles.tabs}>
-          <h3
+          {/* <h3
             className={`${profileStyles.tab} 
       ${tab === "direct" ? profileStyles.activeTab : ""}`}
             onClick={() => setTab("direct")}
           >
             Direct
-          </h3>
+          </h3> */}
           <h3
             className={`${profileStyles.tab} ${
               tab === "auction" ? profileStyles.activeTab : ""
@@ -166,7 +166,7 @@ export default function SaleInfo({ nft }: Props) {
         </div>
 
         {/* Direct listing fields */}
-        <div
+        {/* <div
           className={`${
             tab === "direct"
               ? styles.activeTabContent
@@ -176,7 +176,6 @@ export default function SaleInfo({ nft }: Props) {
         >
           <h4 className={styles.formSectionTitle}>When </h4>
 
-          {/* Input field for auction start date */}
           <legend className={styles.legend}> Listing Starts on </legend>
           <input
             className={styles.input}
@@ -185,7 +184,7 @@ export default function SaleInfo({ nft }: Props) {
             aria-label="Auction Start Date"
           />
 
-          {/* Input field for auction end date */}
+     
           <legend className="legend text-black dark:text-white ">
             {" "}
             Listing Ends on{" "}
@@ -198,7 +197,7 @@ export default function SaleInfo({ nft }: Props) {
           />
           <h4 className={styles.formSectionTitle}>Price </h4>
 
-          {/* Input field for buyout price */}
+       
           <legend className="legend text-black dark:text-white">
             {" "}
             Price per token
@@ -229,22 +228,20 @@ export default function SaleInfo({ nft }: Props) {
                 position: "bottom-center",
               });
 
-              navigate(
-                `/NFTDetails/${nft.metadata.id}`
-              );
+              navigate(`/NFTDetails/${nft.metadata.id}`);
             }}
           >
             Create Direct Listing
           </Web3Button>
-        </div>
+        </div> */}
 
         {/* Auction listing fields */}
         <div
-          className={`${
-            tab === "auction"
-              ? styles.activeTabContent
-              : profileStyles.tabContent
-          }`}
+          // className={`${
+          //   tab === "auction"
+          //     ? styles.activeTabContent
+          //     : profileStyles.tabContent
+          // }`}
           style={{ flexDirection: "column" }}
         >
           <h4 className={styles.formSectionTitle}>When </h4>
@@ -304,9 +301,7 @@ export default function SaleInfo({ nft }: Props) {
                 style: toastStyle,
                 position: "bottom-center",
               });
-              navigate(
-                `/NFTDetails/${nft.metadata.id}`
-              );
+              navigate(`/NFTDetails/${nft.metadata.id}`);
             }}
           >
             Create Auction Listing

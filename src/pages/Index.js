@@ -23,4 +23,3 @@ export { default as CreateCampaign } from "./Campagins/CreateCampaign";
 //wallet//
 export { default as BearWallet } from "./Wallet/BearWallet";
 export { default as BullWallet } from "./Wallet/BullWallet";
-export { default as NFTDetail } from "./NFTDetail/[contractAddress]/[tokenid]";

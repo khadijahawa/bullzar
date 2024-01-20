@@ -21,8 +21,8 @@ import {
   CreateNft,
   Friends,
   Sell,
-  TreasurePlay, ClubMarket,
-  NFTDetail,
+  TreasurePlay,
+  ClubMarket,
 } from "./pages/Index";
 import NFTDetails from "./components/NFTDetails";
 
@@ -58,13 +58,12 @@ const App = () => {
               <Route path="/Sell" element={<Sell />} />
               <Route path="/TreasurePlay" element={<TreasurePlay />} />
 
-              <Route path="/CampaignDetails/:title" 
-               element={<CampaignDetails />} />
-              
+              <Route
+                path="/CampaignDetails/:title"
+                element={<CampaignDetails />}
+              />
+
               <Route path="/NFTDetails/:id" element={<NFTDetails />} />
-           
-           
-           
             </Routes>
           </div>
         </div>

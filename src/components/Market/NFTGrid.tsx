@@ -2,11 +2,11 @@ import type { NFT as NFTType } from "@thirdweb-dev/sdk";
 import { Link } from "react-router-dom";
 // import Link from "next/link";
 import React from "react";
-import { nftDropContractAddress } from "../../constants/contractAddresses";
+// import { nftDropContractAddress } from "../../constants/contractAddresses";
 import { Skeleton } from "../../components";
 import { NFTComponent } from "../../components";
 import styles from "../../styles/Buy.module.css";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 
 type Props = {
   isLoading: boolean;
@@ -21,7 +21,7 @@ export default function NFTGrid({
   overrideOnclickBehavior,
   emptyText = "No NFTs found for this collection.",
 }: Props) {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   console.log("all data", data);
   return (
     <div className={styles.nftGridContainer}>
@@ -35,7 +35,6 @@ export default function NFTGrid({
         data.map((nft) =>
           !overrideOnclickBehavior ? (
             <Link
-             
               to={`/NFTDetails/${nft.metadata.id}`}
               key={nft.metadata.id}
               className={styles.nftContainer}

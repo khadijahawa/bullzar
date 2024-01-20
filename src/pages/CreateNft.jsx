@@ -3,7 +3,8 @@ import {
   useAddress,
   useContract,
   Web3Button,
-  useStorageUpload, useNFTs,
+  useStorageUpload,
+  useNFTs,
 } from "@thirdweb-dev/react";
 import styles from "../styles/Theme.module.css";
 import { Link } from "react-router-dom";
@@ -14,49 +15,9 @@ import { Trans } from "@lingui/macro";
 import { Button } from "react-bootstrap";
 import { profile2 } from "../assets";
 
-
 const NFT_COLLECTION_ADDRESS = "0xFCe8AB8881eEaF81803fB9669cC2d6F4750d5657";
 
 // need fix //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const CreateNft = () => {
   const { mutateAsync: upload } = useStorageUpload(); // Thirdweb storage upload hook
@@ -65,7 +26,7 @@ const CreateNft = () => {
     NFT_COLLECTION_ADDRESS,
     "nft-collection"
   );
-   const [nftName, setNftName] = useState("");
+  const [nftName, setNftName] = useState("");
   const [file, setFile] = useState();
   const fileInputRef = useRef(null);
   const ref = useRef();
@@ -73,25 +34,22 @@ const CreateNft = () => {
   const toggleAutoRotate = () => {
     setAutoRotate(!autoRotate);
   };
- const [message, setMessage] = useState("");
- const { data: nfts, isLoading: loadingNfts } = useNFTs(nftCollection);
+  //  const [message, setMessage] = useState("");
+  //  const { data: nfts, isLoading: loadingNfts } = useNFTs(nftCollection);
 
+  // Function to store file in state when the user uploads it
+  const uploadFile = () => {
+    if (fileInputRef?.current) {
+      fileInputRef.current.click();
 
-// Function to store file in state when the user uploads it
-const uploadFile = () => {
-  if (fileInputRef?.current) {
-    fileInputRef.current.click();
-
-    fileInputRef.current.onchange = () => {
-      if (fileInputRef?.current?.files?.length) {
-        const file = fileInputRef.current.files[0];
-        setFile(file);
-      }
-    };
-  }
-};
-
-
+      fileInputRef.current.onchange = () => {
+        if (fileInputRef?.current?.files?.length) {
+          const file = fileInputRef.current.files[0];
+          setFile(file);
+        }
+      };
+    }
+  };
 
   const mintWithSignature = async () => {
     try {
@@ -99,8 +57,8 @@ const uploadFile = () => {
         method: "POST",
         body: JSON.stringify({
           authorAddress: address,
-          nftName: nftName || ""
-        })
+          nftName: nftName || "",
+        }),
       });
       console.log(signedPayloadReq);
       // Grab the JSON from the response
@@ -112,8 +70,6 @@ const uploadFile = () => {
         return;
       }
 
-
-
       // Extract the file from the response or use the existing file state
       const fileToUpload = json.signedPayload.image || file;
 
@@ -121,7 +77,7 @@ const uploadFile = () => {
       const dataToUpload = {
         name: nftName || "", // Include the name if available
         description: "The Awesome BULL Friends", // A default description or modify as needed
-        image: fileToUpload // The file to upload
+        image: fileToUpload, // The file to upload
       };
 
       const uris = await upload({ data: dataToUpload });
@@ -130,7 +86,7 @@ const uploadFile = () => {
       const signedPayload = json.signedPayload;
       const nft = await nftCollection?.signature.mint({
         ...signedPayload,
-        image: uris[0] // Use the storage URI instead of the file
+        image: uris[0], // Use the storage URI instead of the file
       });
 
       alert("Minted successfully!");
@@ -141,40 +97,26 @@ const uploadFile = () => {
     }
   };
 
-
-
-
-
-
-
-  
-
-
-
-
   //fix market - friends page//
 
-
-
-  
   return (
     <div>
       <section>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <Link className="transfer-button2" to="/Friends">
-          <Button >
-            <Trans> Friends</Trans>
-          </Button>
-        </Link>
-        <Link className="transfer-button2" to="/BULLTOWN">
-           <Button style={{ marginRight: "20px" }}>
-             <Trans>BULLTOWN</Trans>
-           </Button>
-         </Link>
- <Link to="/Profile" >
-   <img src={profile2} alt="address" />
- </Link>
- </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <Link className="transfer-button2" to="/Friends">
+            <Button>
+              <Trans> Friends</Trans>
+            </Button>
+          </Link>
+          <Link className="transfer-button2" to="/BULLTOWN">
+            <Button style={{ marginRight: "20px" }}>
+              <Trans>BULLTOWN</Trans>
+            </Button>
+          </Link>
+          <Link to="/Profile">
+            <img src={profile2} alt="address" />
+          </Link>
+        </div>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -187,13 +129,11 @@ const uploadFile = () => {
             <h1 className="text-2xl font-bold text-blue-500 text-center">
               <Trans> MINT BULL Friend</Trans>
             </h1>
-
-           
-              ! 🐶🐨🍇🐓🍌🍐🍎🐰🦝🍋🍊🦁🐵🐧
-            
+            ! 🐶🐨🍇🐓🍌🍐🍎🐰🦝🍋🍊🦁🐵🐧
             {file ? (
               <img
-                src={URL.createObjectURL(file)} alt="Bull Friend"
+                src={URL.createObjectURL(file)}
+                alt="Bull Friend"
                 style={{ cursor: "pointer", maxHeight: 250, borderRadius: 8 }}
                 onClick={() => setFile(undefined)}
               />
@@ -242,13 +182,13 @@ const uploadFile = () => {
         </form>
       </section>
 
-  <div
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           width: "75vw",
-          height: "50vh"
+          height: "50vh",
         }}
       >
         <Canvas
@@ -270,9 +210,9 @@ const uploadFile = () => {
           </Suspense>
           <OrbitControls ref={ref} autoRotate={autoRotate} />
         </Canvas>
-      </div> 
+      </div>
     </div>
   );
 };
 
-export default CreateNft
+export default CreateNft;
