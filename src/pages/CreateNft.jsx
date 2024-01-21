@@ -75,18 +75,17 @@ const CreateNft = () => {
 
       // Upload the file to Thirdweb storage along with additional data
       const dataToUpload = {
-        name: nftName || "", // Include the name if available
-        description: "The Awesome BULL Friends", // A default description or modify as needed
-        image: fileToUpload, // The file to upload
+        name: nftName || "",
+        description: "The Awesome BULL Friends",
+        image: fileToUpload,
       };
 
       const uris = await upload({ data: dataToUpload });
 
-      // Continue with the rest of your code using the uploaded URI
       const signedPayload = json.signedPayload;
       const nft = await nftCollection?.signature.mint({
         ...signedPayload,
-        image: uris[0], // Use the storage URI instead of the file
+        image: uris[0],
       });
 
       alert("Minted successfully!");
